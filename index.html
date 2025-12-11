@@ -67,13 +67,8 @@
         letter-spacing: -0.03em;
       }
 
-      /* Custom styles for the main heading text */
       .smart-core-heading {
-        font-size: clamp(
-          3rem,
-          10vw,
-          6rem
-        );
+        font-size: clamp(3rem, 10vw, 6rem);
         line-height: 1;
         color: white;
       }
@@ -93,11 +88,7 @@
       }
 
       .body-text {
-        font-size: clamp(
-          1rem,
-          2.5vw,
-          1.5rem
-        );
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
         line-height: 1.25;
         color: white;
         font-weight: 500;
@@ -113,6 +104,16 @@
         .suit-section {
           height: 937px;
         }
+      }
+
+      .data-color {
+        color: #ccdc48;
+      }
+
+      .product-visual-container {
+        width: clamp(280px, 45vw, 550px);
+        height: auto;
+        position: relative;
       }
     </style>
   </head>
@@ -400,24 +401,61 @@
         background-position: center;
         background-repeat: no-repeat;
       "
-      class="suit-section relative w-full flex items-center justify-center "
+      class="suit-section relative w-full flex items-center justify-center"
     >
-
       <div
         class="absolute inset-0 topSection mx-auto flex items-center justify-end px-4 lg:px-0"
       >
-        <div class="space-y-6 text-right w-full max-w-md lg:max-w-lg  ">
-          <h1 class="smart-core-heading anton-like uppercase text-left  ">
+        <div class="space-y-6 text-right w-full max-w-md lg:max-w-lg">
+          <h1
+            class="smart-core-heading anton-like uppercase text-center lg:text-left"
+          >
             THE <span class="suit-color">SUIT</span>
           </h1>
 
-      
-          <p class=" anton-like text-white font-semibold text-left  ">
+          <p
+            class="anton-like text-white font-semibold text-center lg:text-left"
+          >
             The Suit is a second skin that keeps sensors secure for top-level
             accuracy—lightweight, breathable, and built to amplify your data.
           </p>
         </div>
       </div>
+    </section>
+    <section class="bg-black">
+      <section
+        class="w-full h-auto min-h-[600px] lg:h-[1006px] flex items-center justify-center py-16 px-4 lg:px-0 topSection mx-auto"
+      >
+        <div
+          class="w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-12"
+        >
+          <div class="lg:w-1/2 space-y-8 lg:pr-16 text-center lg:text-left">
+            <h1 class="smart-core-heading anton-like uppercase">
+              THE <span class="data-color">DATA</span>
+            </h1>
+
+            <p
+              class="anton-like text-white font-semibold text-center lg:text-left"
+            >
+              The Data makes hidden physiology measurable—helping athletes train
+              smarter, recover faster, and compete stronger.
+            </p>
+          </div>
+
+          <div class="lg:w-1/2 flex justify-center lg:justify-end">
+            <div class="product-visual-container">
+              <img
+                src="./images/image4.png"
+                alt="The CoreImpact Device Exploded View"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section>
+     
     </section>
     <section class="bg-[#1d1d1d]">
       <footer
