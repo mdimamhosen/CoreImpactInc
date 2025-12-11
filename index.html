@@ -72,6 +72,11 @@
         line-height: 1;
         color: white;
       }
+      .core-heading {
+        font-size: clamp(2rem, 5vw, 6rem);
+        line-height: 1;
+        color: white;
+      }
 
       .core-color {
         color: #ccdc48;
@@ -110,10 +115,32 @@
         color: #ccdc48;
       }
 
-      .product-visual-container {
-        width: clamp(280px, 45vw, 550px);
-        height: auto;
-        position: relative;
+      .small-heading {
+        font-size: clamp(2.2rem, 3vw, 4rem);
+        line-height: 1;
+        color: white;
+      }
+
+      @media (min-width: 1024px) {
+        .large-text {
+          font-family: "Anton", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 96px;
+          line-height: 99%;
+          letter-spacing: 0%;
+          text-transform: uppercase;
+        }
+      }
+
+      br {
+        display: none;
+      }
+
+      @media (min-width: 1024px) {
+        br {
+          display: inline;
+        }
       }
     </style>
   </head>
@@ -454,8 +481,42 @@
         </div>
       </section>
     </section>
-    <section>
-     
+    <section class="bg-black">
+      <section
+        class="w-full topSection min-h-[70vh] text-white px-4 lg:px-0 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:top-1 lg:left-1 lg:transform-none w-full lg:w-fit flex justify-center z-0"
+        >
+          <h1 class="small-heading anton-like uppercase text-left large-text">
+            Beyond a <br />
+            Wearable
+          </h1>
+        </div>
+
+        <div
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full md:left-1/2 md:transform md:-translate-x-1/2 lg:bottom-20 lg:right-10 lg:left-auto lg:transform-none flex flex-col justify-center items-center gap-2 z-20"
+        >
+          <h1
+            class="small-heading w-full text-center anton-like uppercase lg:text-right large-text"
+          >
+            It’s a Full-Body <br />
+            Performance System
+          </h1>
+
+          <button
+            class="w-fit bg-[#C8FF4D] text-black px-6 py-3 font-bold uppercase text-sm rounded-md hover:bg-lime-400 transition z-20"
+          >
+            Pre-order Now
+          </button>
+        </div>
+
+        <img
+          src="./images/image5.png"
+          alt="product image"
+          class="absolute inset-0 w-full h-full object-contain z-10"
+        />
+      </section>
     </section>
     <section class="bg-[#1d1d1d]">
       <footer
