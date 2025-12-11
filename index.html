@@ -10,6 +10,12 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
       .giant-text {
         font-family: "Anton", sans-serif;
         font-weight: 400;
@@ -36,10 +42,6 @@
         text-transform: uppercase;
       }
 
-      footer {
-        /* default styles if needed */
-      }
-
       @media (min-width: 1024px) {
         footer {
           max-width: 1440px;
@@ -52,83 +54,80 @@
           max-width: 1440px;
           margin: auto;
         }
+
+        #ecosystem-section {
+          height: 783px;
+        }
       }
 
-      #ecosystem-section {
-        height: 783px;
+      .anton-like {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.03em;
       }
 
-      /* Custom style for the large capitalized heading */
-      .large-heading {
-        font-size: clamp(3rem, 10vw, 8rem);
+      /* Custom styles for the main heading text */
+      .smart-core-heading {
+        font-size: clamp(
+          3rem,
+          10vw,
+          6rem
+        );
         line-height: 1;
-        letter-spacing: -0.05em;
+        color: white;
       }
 
-      /* Custom style for the smaller capitalized subheading */
-      .small-heading {
-        font-family: Anton;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 48px;
-        line-height: 100%;
-        letter-spacing: -3%;
-        text-transform: uppercase;
-        color: #b5e745;
-        text-shadow: 0 0 10px rgba(181, 231, 69, 0.4);
+      .core-color {
+        color: #ccdc48;
       }
 
-      /* Responsive height control for the image (optional, but good practice) */
-      .product-image {
-        max-height: 70%;
-        height: auto;
-        width: auto;
-        object-fit: contain;
+      .product-visual-container {
+        width: clamp(280px, 45vw, 600px);
+        aspect-ratio: 1 / 1;
+        position: relative;
       }
-       .anton-like {
-            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-            font-weight: 900;
-            letter-spacing: -0.03em; /* -3% Letter Spacing */
-        }
-        
-        /* Custom styles for the main heading text */
-        .smart-core-heading {
-            font-size: clamp(3rem, 10vw, 6rem); /* Responsive size (96px desktop target) */
-            line-height: 1; /* 100% line height */
-            color: white;
-        }
 
-        /* Custom color for the word 'CORE' */
-        .core-color {
-            color: #CCDC48; /* Primary Color: #CCDC48 */
-        }
+      .suit-color {
+        color: #ccdc48;
+      }
 
-         
+      .body-text {
+        font-size: clamp(
+          1rem,
+          2.5vw,
+          1.5rem
+        );
+        line-height: 1.25;
+        color: white;
+        font-weight: 500;
+        max-width: 400px;
+        z-index: 20;
+      }
 
-        /* Container for the product image, ensuring its placement */
-        .product-visual-container {
-            width: clamp(280px, 45vw, 600px); /* Responsive size for the visual */
-            aspect-ratio: 1 / 1; /* Ensures it's circular/square */
-            position: relative;
+      .suit-section {
+        height: 500px;
+      }
+
+      @media (min-width: 768px) {
+        .suit-section {
+          height: 937px;
         }
+      }
     </style>
   </head>
 
   <body>
     <section>
-      <!-- HERO SECTION -->
       <div class="fixed-header-container">
-        <!-- Top Banner: Pre-order message -->
         <div
           class="bg-[#B5E745] text-gray-800 text-center py-1 text-xs sm:text-sm font-medium"
         >
           Pre-order your Impact Eco Suit today!
         </div>
-        <!-- Main Navigation Bar (Transparent) -->
       </div>
 
       <section class="relative w-full h-[60vh] lg:h-[850px] overflow-hidden">
-        <!-- Background Video -->
         <video
           autoplay
           muted
@@ -139,11 +138,9 @@
           <source src="./video.mp4" type="video/mp4" />
         </video>
 
-        <!-- Navbar -->
         <section class="bg-black/20 backdrop-blur-sm border-b border-white/10">
-          <header class="topSection text-white py-4 z-20 relative">
+          <header class="topSection px-4 lg:px-0 text-white py-4 z-20 relative">
             <nav class="flex justify-between items-center w-full mx-auto">
-              <!-- Left Section: Logo -->
               <div class="flex items-center cursor-pointer">
                 <svg
                   width="34"
@@ -171,7 +168,6 @@
                 >
               </div>
 
-              <!-- Hamburger Button (Mobile) -->
               <div class="lg:hidden">
                 <button id="menu-btn" class="text-white focus:outline-none">
                   <svg
@@ -190,7 +186,6 @@
                 </button>
               </div>
 
-              <!-- Navigation Links -->
               <div
                 id="menu"
                 class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wider text-white"
@@ -222,7 +217,6 @@
                 >
               </div>
 
-              <!-- Right Section: Icons and Pre-Order -->
               <div class="hidden lg:flex items-center space-x-4 sm:space-x-6">
                 <button
                   class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200"
@@ -283,7 +277,6 @@
               </div>
             </nav>
 
-            <!-- Mobile Menu -->
             <div id="mobile-menu" class="lg:hidden hidden mt-2 space-y-2">
               <a
                 href="#"
@@ -319,11 +312,11 @@
           </header>
         </section>
 
-        <!-- Dark Gradient Overlay -->
         <div class="absolute inset-0 bg-black/20"></div>
 
-        <!-- Hero Text -->
-        <div class="relative topSection z-10 flex items-center h-full">
+        <div
+          class="relative topSection px-4 lg:px-0 z-10 flex items-center h-full"
+        >
           <div
             class="text-left text-white font-extrabold uppercase leading-tight"
           >
@@ -341,27 +334,19 @@
         </div>
       </section>
     </section>
-
     <section class="bg-black flex items-center justify-center">
       <div
         id="ecosystem-section"
-        class="w-full topSection mx-auto bg-black flex flex-col items-center justify-between py-12"
+        class="w-full topSection px-4 lg:px-0 mx-auto bg-black flex flex-col items-center justify-between py-12"
       >
-        <!-- Top Heading -->
         <h1
-          class="large-heading text-white font-extrabold uppercase text-center mt-8"
+          class="smart-core-heading anton-like uppercase text-center mb-8 text-white"
         >
           OUR ECOSYSTEM
         </h1>
-
-        <!-- Product Image (Centered) -->
         <div
           class="flex items-center justify-center flex-grow w-full max-w-4xl"
         >
-          <!-- 
-                Using a placeholder image that mimics the color and shape of the original 
-                product image (a two-part, floating, teal-lit device). 
-            -->
           <img
             src="./images/image1.png"
             alt="CoreImpact Product Device with Teal Glow"
@@ -369,51 +354,74 @@
             onerror="this.onerror=null;"
           />
         </div>
-
-        <!-- Bottom Heading -->
-        <h2 class="small-heading font-extrabold uppercase text-center mb-8">
+        <h2
+          class="text-[#b5e745] anton-like font-bold text-lg lg:text-3xl font-semibold uppercase text-center mb-8"
+        >
           THE FUTURE OF ATHLETIC PERFORMANCE
         </h2>
       </div>
     </section>
     <section class="bg-black flex items-center justify-center">
-       <section class="w-full topSection  flex items-center justify-center py-16  ">
-        <div class="w-full   mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-            
-            <!-- Left Content Column -->
-            <div class="lg:w-1/2 space-y-8 lg:pr-16 text-center lg:text-left">
-                
-                <!-- Main Heading -->
-                <h1 class="smart-core-heading anton-like uppercase">
-                    THE SMART <span class="core-color">CORE</span>
-                </h1>
-                
-                <!-- Body Paragraph -->
-                <p class="body-text text-white text-lg font-medium">
-                    The Core captures real-time muscle, breathing, and heart-rate signals with precision—unlocking insights faster than the eye can see.
-                </p>
+      <section
+        class="w-full topSection px-4 lg:px-0 flex items-center justify-center py-16"
+      >
+        <div
+          class="w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-12"
+        >
+          <div class="lg:w-1/2 space-y-8 lg:pr-16 text-center lg:text-left">
+            <h1 class="smart-core-heading anton-like uppercase">
+              THE SMART <span class="core-color">CORE</span>
+            </h1>
+            <p class="body-text text-white text-sm lg:text-lg font-medium">
+              The Core captures real-time muscle, breathing, and heart-rate
+              signals with precision—unlocking insights faster than the eye can
+              see.
+            </p>
+          </div>
+          <div class="lg:w-1/2 flex justify-center lg:justify-end">
+            <div
+              class="product-visual-container bg-gray-800 rounded-full shadow-2xl overflow-hidden relative"
+            >
+              <img
+                src="./images/image2.png"
+                alt="The Smart Core Device"
+                class="w-full h-full object-cover"
+                onerror="this.onerror=null;"
+              />
             </div>
-
-            <!-- Right Visual Column (Simulated Product Image) -->
-            <div class="lg:w-1/2 flex justify-center lg:justify-end">
-                <div class="product-visual-container bg-gray-800 rounded-full shadow-2xl overflow-hidden relative">
-                    <!-- Placeholder for the sophisticated 3D product visual -->
-                    <img 
-                        src="./images/image2.png"
-                        alt="The Smart Core Device" 
-                        class="w-full h-full object-cover"
-                        onerror="this.onerror=null;"
-                    >
-                </div>
-            </div>
-
+          </div>
         </div>
+      </section>
     </section>
-    </section>
+    <section
+      style="
+        background-image: url('./images/image3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+      class="suit-section relative w-full flex items-center justify-center "
+    >
 
+      <div
+        class="absolute inset-0 topSection mx-auto flex items-center justify-end px-4 lg:px-0"
+      >
+        <div class="space-y-6 text-right w-full max-w-md lg:max-w-lg  ">
+          <h1 class="smart-core-heading anton-like uppercase text-left  ">
+            THE <span class="suit-color">SUIT</span>
+          </h1>
+
+      
+          <p class=" anton-like text-white font-semibold text-left  ">
+            The Suit is a second skin that keeps sensors secure for top-level
+            accuracy—lightweight, breathable, and built to amplify your data.
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="bg-[#1d1d1d]">
       <footer
-        class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12"
+        class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0"
       >
         <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
           <div class="space-y-6">
@@ -536,7 +544,6 @@
       </footer>
     </section>
     <script>
-      // Toggle mobile menu
       const btn = document.getElementById("menu-btn");
       const menu = document.getElementById("mobile-menu");
 
