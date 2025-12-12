@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .giant-text {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1.3rem, 7vw, 3rem);
+        line-height: 100%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 1024px) {
+        .giant-text {
+          font-size: 200px;
+        }
+      }
+
+      .hero-text {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 128px;
+        line-height: 120%;
+        letter-spacing: -3%;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 1024px) {
+        footer {
+          max-width: 1440px;
+          height: 604px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .topSection {
+          max-width: 1440px;
+          margin: auto;
+        }
+
+        #ecosystem-section {
+          height: 783px;
+        }
+      }
+
+      .anton-like {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+      }
+
+      .smart-core-heading {
+        font-size: clamp(3rem, 10vw, 6rem);
+        line-height: 1;
+        color: white;
+      }
+      .core-heading {
+        font-size: clamp(2rem, 5vw, 6rem);
+        line-height: 1;
+        color: white;
+      }
+
+      .core-color {
+        color: #ccdc48;
+      }
+
+      .product-visual-container {
+        width: clamp(280px, 45vw, 600px);
+        aspect-ratio: 1 / 1;
+        position: relative;
+      }
+
+      .suit-color {
+        color: #ccdc48;
+      }
+
+      .body-text {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        line-height: 1.25;
+        color: white;
+        font-weight: 500;
+        max-width: 400px;
+        z-index: 20;
+      }
+
+      .suit-section {
+        height: 500px;
+      }
+
+      @media (min-width: 768px) {
+        .suit-section {
+          height: 937px;
+        }
+      }
+
+      .data-color {
+        color: #ccdc48;
+      }
+
+      .small-heading {
+        font-size: clamp(2.2rem, 3vw, 4rem);
+        line-height: 1;
+        color: white;
+      }
+
+      @media (min-width: 1024px) {
+        .large-text {
+          font-family: "Anton", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 96px;
+          line-height: 99%;
+          letter-spacing: 0%;
+          text-transform: uppercase;
+        }
+      }
+
+      br {
+        display: none;
+      }
+
+      @media (min-width: 1024px) {
+        br {
+          display: inline;
+        }
+      }
+      .custom-scrollbar-container::-webkit-scrollbar {
+        height: 3px;
+        width: 2px;
+      }
+
+      .custom-scrollbar-container::-webkit-scrollbar-track {
+        background: #333333;
+        border-radius: 10px;
+      }
+
+      .custom-scrollbar-container::-webkit-scrollbar-thumb {
+        background: #88b04b;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        .lg\:custom-card-dims {
+          width: 424px;
+          height: 600px;
+        }
+        .lg\:custom-card-dims img {
+          width: 424px;
+          height: 480px;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .signature {
+        height: 50px;
+        width: auto;
+      }
+      .stats-font {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        line-height: 1;
+        font-weight: 800;
+      }
+
+      .data-color-lime {
+        color: #ccff00;
+      }
+      .bg-data-color-lime {
+        background-color: #ccff00;
+      }
+      .product-scroll-container::-webkit-scrollbar {
+        height: 6px;
+      }
+      .product-scroll-container::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 10px;
+      }
+      .product-scroll-container::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      .product-card {
+        min-height: 600px;
+      }
+      .product-card .product-image-container {
+        height: 400px;
+      }
+      .product-card .product-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .product-card .product-button {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .product-card:hover .product-button {
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+  <section>
+      <div class="fixed-header-container">
+        <div
+          class="bg-[#B5E745] text-gray-800 text-center py-1 text-xs sm:text-sm font-medium"
+        >
+          Pre-order your Impact Eco Suit today!
+        </div>
+      </div>
+
+      <section class="relative w-full h-[60vh] lg:h-[850px] overflow-hidden">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="./video.mp4" type="video/mp4" />
+        </video>
+
+        <section class="bg-black/20 backdrop-blur-sm border-b border-white/10 relative z-30">
+          <header
+            class="topSection px-4 lg:px-0 text-white py-4 relative w-full"
+          >
+            <nav class="flex justify-between items-center w-full mx-auto">
+              <a href="index.html" class="flex items-center cursor-pointer">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 54 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376"
+                    fill="white"
+                  />
+                </svg>
+
+                <span class="text-3xl sm:text-4xl font-bold tracking-tight"
+                  >coreimpact</span
+                >
+              </a>
+              </div>
+
+              <div class="lg:hidden z-50">
+                <button
+                  id="menu-btn"
+                  class="text-white focus:outline-none p-2 cursor-pointer"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div
+                id="menu"
+                class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wider text-white"
+              >
+                <a
+                  href="about.html"
+                  class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded"
+                  >ABOUT</a
+                >
+                <a
+                  href="#"
+                  class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded"
+                  >SPORTS</a
+                >
+                <a
+                  href="#"
+                  class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded"
+                  >TECH</a
+                >
+                <a
+                  href="news.html"
+                  class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded"
+                  >NEWS</a
+                >
+                <a
+                  href="labs.html"
+                  class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded"
+                  >LABS</a
+                >
+              </div>
+
+              <div class="hidden lg:flex items-center space-x-4 sm:space-x-6">
+                <button
+                  class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="bg-[#B5E745] text-black px-5 py-2.5 text-sm font-bold uppercase rounded-md shadow-lg hover:bg-black hover:text-[#b5e745] transition duration-300 shrink-0"
+                >
+                  PRE-ORDER NOW
+                </button>
+              </div>
+            </nav>
+
+            <div
+              id="mobile-menu"
+              class="lg:hidden hidden mt-2 space-y-2 bg-black/95 rounded-lg p-4 absolute top-full left-0 right-0 z-50 mx-4"
+            >
+              <a
+                href="about.html"
+                class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200"
+                >ABOUT</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200"
+                >SPORTS</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200"
+                >TECH</a
+              >
+              <a
+                href="news.html"
+                class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200"
+                >NEWS</a
+              >
+              <a
+                href="labs.html"
+                class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200"
+                >LABS</a
+              >
+              <button
+                class="w-full bg-[#B5E745] text-black px-5 py-2.5 text-sm font-bold uppercase rounded-md shadow-lg hover:bg-black hover:text-[#b5e745] transition duration-300"
+              >
+                PRE-ORDER NOW
+              </button>
+            </div>
+          </header>
+        </section>
+
+        <div class="absolute inset-0 bg-black/20"></div>
+
+        <div
+          class="relative topSection px-4 lg:px-0 z-10 flex items-center h-full"
+        >
+          <div
+            class="text-left text-white font-extrabold uppercase leading-tight"
+          >
+            <h1
+              class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl hero-text"
+            >
+              Train Smarter.
+            </h1>
+            <h1
+              class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl hero-text mt-2"
+            >
+              Perform Stronger.
+            </h1>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="h-full w-full bg-black text-white anton-like leading-normal">
+    <div class="  flex items-center justify-center px-4 py-12 md:py-16 lg:py-20">
+        <div class="w-full topSection">
+            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-[4.375rem] items-start lg:items-center justify-between">
+                <div class="flex flex-col gap-6 sm:gap-8 lg:gap-10 w-full lg:w-[472px] flex-shrink-0 lg:pt-[174px]">
+                    <div class="flex flex-col gap-6 sm:gap-8">
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl hero-text">About us</h1>
+                        <p class="text-sm   font-medium leading-relaxed opacity-90 text-white">Core Impact is an innovative sports technology company based in Elk Grove, CA. Our mission is to revolutionize athletic performance and injury prevention through the creation, production, and promotion of sports-specific wearable devices that offer real-time feedback to athletes, coaches, and trainers. Founded by a former professional baseball player with a deep understanding of the challenges athletes face. Core Impact is proud to be backed by and used by elite athletes—including MLB superstar Mookie Betts, who believes in our vision and trains with our system.</p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-[1.125rem] items-stretch sm:items-center">
+                        <button class="flex justify-center items-center h-[51.704px] px-6 rounded-[5px] text-sm font-bold leading-normal uppercase tracking-wider cursor-pointer border-none transition-all duration-300 whitespace-nowrap bg-[#CCDC48] text-black hover:bg-[#b8c93f] w-full sm:w-auto">DAE TECHNOLOGY</button>
+                        <button class="flex justify-center items-center h-[51.704px] px-6 rounded-[5px] text-sm font-bold leading-normal uppercase tracking-wider cursor-pointer transition-all duration-300 whitespace-nowrap bg-transparent text-white border border-white hover:bg-white hover:text-black w-full sm:w-auto">CONTACT US</button>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-[790px] flex-shrink-0">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/4dd8cb00fafdf625f653e1fb72554cd577b71486?width=1580" alt="Core Impact Athlete Training" class="w-full h-auto block object-contain rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="bg-[#1d1d1d]">
+      <footer
+        class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0"
+      >
+        <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
+          <div class="space-y-6">
+            <div class="flex items-center">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 54 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z"
+                  fill="white"
+                />
+                <path
+                  d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z"
+                  fill="white"
+                />
+                <path
+                  d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376"
+                  fill="white"
+                />
+              </svg>
+
+              <span class="text-3xl sm:text-4xl font-bold tracking-tight"
+                >coreimpact</span
+              >
+            </div>
+
+            <p
+              class="text-sm text-gray-300 leading-relaxed max-w-xs sm:max-w-sm"
+            >
+              Real-Time Performance Tracking to Help Athletes Perform at Their
+              Best.
+            </p>
+
+            <div class="flex items-center space-x-3 sm:space-x-4">
+              <div
+                class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer"
+              >
+                F
+              </div>
+              <div
+                class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer"
+              >
+                I
+              </div>
+              <div
+                class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer"
+              >
+                X
+              </div>
+              <div
+                class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-xs hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer"
+              >
+                in
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-auto">
+            <label class="text-sm text-gray-300">Enter your email</label>
+
+            <div class="flex border-b border-gray-500 mt-2 pb-2">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="flex-1 bg-transparent outline-none text-sm text-gray-200 placeholder-gray-500"
+              />
+              <button
+                class="text-sm hover:bg-[#b5e745] hover:text-black px-2 py-1 rounded transition duration-200"
+              >
+                Subscribe
+              </button>
+            </div>
+
+            <p class="mt-3 text-xs text-gray-400 max-w-xs sm:max-w-sm">
+              Subscribe our newsletter so that you can get offer and discount.
+            </p>
+          </div>
+        </div>
+
+        <div class="py-10 sm:py-12 md:py-16 overflow-hidden">
+          <h1
+            class="giant-text text-white font-extrabold text-center uppercase whitespace-nowrap"
+          >
+            COREIMPACT INC.
+          </h1>
+        </div>
+
+        <hr class="border-gray-700 mb-6" />
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0"
+        >
+          <p class="text-white">
+            Copyright - 2025 | All rights reserved by Coreimpact Inc.
+          </p>
+
+          <div
+            class="flex items-center space-x-1 cursor-pointer hover:text-[#b5e745] transition duration-200"
+          >
+            <span class="font-semibold text-whtie">USD $</span>
+            <svg
+              class="w-3 h-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        console.log("Button:", btn, "Menu:", menu);
+
+        if (btn && menu) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log("Button clicked");
+            menu.classList.toggle("hidden");
+          });
+
+          // Close menu when clicking on a link
+          const links = menu.querySelectorAll("a");
+          links.forEach((link) => {
+            link.addEventListener("click", function () {
+              menu.classList.add("hidden");
+            });
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener("click", function (e) {
+            if (
+              !menu.contains(e.target) &&
+              !btn.contains(e.target) &&
+              !btn.parentElement.contains(e.target)
+            ) {
+              menu.classList.add("hidden");
+            }
+          });
+        } else {
+          console.error("Menu button or mobile menu not found");
+        }
+      });
+    </script>
+</body>
+</html>
