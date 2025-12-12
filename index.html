@@ -142,6 +142,78 @@
           display: inline;
         }
       }
+      .custom-scrollbar-container::-webkit-scrollbar {
+        height: 3px;
+        width: 2px;
+      }
+
+      .custom-scrollbar-container::-webkit-scrollbar-track {
+        background: #333333;
+        border-radius: 10px;
+      }
+
+      .custom-scrollbar-container::-webkit-scrollbar-thumb {
+        background: #88b04b;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        .lg\:custom-card-dims {
+          width: 424px;
+          height: 600px;
+        }
+        .lg\:custom-card-dims img {
+          width: 424px;
+          height: 480px;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .signature {
+        height: 50px;
+        width: auto;
+      }
+      .stats-font {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        line-height: 1;
+        font-weight: 800;
+      }
+
+      .data-color-lime {
+        color: #ccff00;
+      }
+      .bg-data-color-lime {
+        background-color: #ccff00;
+      }
+      .product-scroll-container::-webkit-scrollbar {
+        height: 6px;
+      }
+      .product-scroll-container::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 10px;
+      }
+      .product-scroll-container::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      .product-card {
+        min-height: 600px;
+      }
+      .product-card .product-image-container {
+        height: 400px;
+      }
+      .product-card .product-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .product-card .product-button {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .product-card:hover .product-button {
+        opacity: 1;
+      }
     </style>
   </head>
 
@@ -167,7 +239,9 @@
         </video>
 
         <section class="bg-black/20 backdrop-blur-sm border-b border-white/10">
-          <header class="topSection px-4 lg:px-0 text-white py-4 z-20 relative">
+          <header
+            class="topSection px-4 lg:px-0 text-white py-4 z-20 relative w-full"
+          >
             <nav class="flex justify-between items-center w-full mx-auto">
               <div class="flex items-center cursor-pointer">
                 <svg
@@ -196,8 +270,11 @@
                 >
               </div>
 
-              <div class="lg:hidden">
-                <button id="menu-btn" class="text-white focus:outline-none">
+              <div class="lg:hidden z-50">
+                <button
+                  id="menu-btn"
+                  class="text-white focus:outline-none p-2 cursor-pointer"
+                >
                   <svg
                     class="w-6 h-6"
                     fill="none"
@@ -305,7 +382,10 @@
               </div>
             </nav>
 
-            <div id="mobile-menu" class="lg:hidden hidden mt-2 space-y-2">
+            <div
+              id="mobile-menu"
+              class="lg:hidden hidden mt-2 space-y-2 bg-black/95 rounded-lg p-4 absolute top-full left-0 right-0 z-50 mx-4"
+            >
               <a
                 href="#"
                 class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200"
@@ -362,6 +442,100 @@
         </div>
       </section>
     </section>
+    <section class="bg-black">
+      <div class="bg-black py-16 px-4 lg:px-0 topSection">
+        <div class="custom-scrollbar-container flex overflow-x-auto gap-5">
+          <div
+            class="flex-shrink-0 w-80 lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="relative">
+              <img
+                src="./images/image6.png"
+                alt="Abstract illustration of muscle fibers and activation"
+                class="w-full h-80 object-cover lg:custom-card-dims lg:rounded-t-xl"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent"
+              >
+                <h3 class="text-2xl font-bold mb-2 uppercase">
+                  Muscle Activation
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm p-2 text-gray-300">
+              Track which muscles are firing, how intensely, and when —
+              revealing power, balance, and coordination in every movement.
+            </p>
+          </div>
+
+          <div
+            class="flex-shrink-0 w-80 lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="relative">
+              <img
+                src="./images/image7.png"
+                alt="Abstract illustration of a runner with a red heartbeat visualization"
+                class="w-full h-80 object-cover lg:custom-card-dims lg:rounded-t-xl"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent"
+              >
+                <h3 class="text-2xl font-bold mb-2 uppercase">Heart Rate</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-300 p-2">
+              Monitor how hard your heart is working during training and
+              recovery, helping optimize intensity and endurance.
+            </p>
+          </div>
+
+          <div
+            class="flex-shrink-0 w-80 lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="relative">
+              <img
+                src="./images/image8.png"
+                alt="Abstract illustration of a runner with a blue lung visualization"
+                class="w-full h-80 object-cover lg:custom-card-dims lg:rounded-t-xl"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent"
+              >
+                <h3 class="text-2xl font-bold mb-2 uppercase">
+                  Breathing Rate
+                </h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-300 p-2">
+              Capture your real-time respiratory rhythm to understand effort,
+              fatigue, and aerobic capacity across every session.
+            </p>
+          </div>
+
+          <div
+            class="flex-shrink-0 w-80 lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg"
+          >
+            <div class="relative">
+              <img
+                src="./images/image9.png"
+                alt="Abstract illustration of performance graphs and data trends"
+                class="w-full h-80 object-cover lg:custom-card-dims lg:rounded-t-xl"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent"
+              >
+                <h3 class="text-2xl font-bold mb-2 uppercase">Trends</h3>
+              </div>
+            </div>
+            <p class="text-sm text-gray-300">
+              Visualize how your performance evolves over time — track
+              improvements, identify plateaus, and stay on the path to progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="bg-black flex items-center justify-center">
       <div
         id="ecosystem-section"
@@ -518,6 +692,348 @@
         />
       </section>
     </section>
+    <section class="bg-[#121212] px-4 lg:px-0">
+      <div class="bg-[#121212] py-16 px-4 sm:px-6 lg:px-16 text-white">
+        <div class="pb-8 mb-12">
+          <div
+            class="flex topSection flex-col lg:flex-row lg:justify-between lg:items-end"
+          >
+            <div class="max-w-3xl">
+              <h2
+                class="text-3xl lg:text-6xl anton-like font-extrabold uppercase mb-4"
+              >
+                FEATURED PRODUCTS
+              </h2>
+              <p class="text-sm text-gray-400">
+                CoreImpact wearable garments are smart apparel integrated with
+                advanced EMG sensors that precisely track muscle activity. They
+                wirelessly send real-time data to a mobile application,
+                providing immediate, actionable insights to optimize training
+                and elevate performance.
+              </p>
+            </div>
+
+            <div class="mt-8 lg:mt-0 lg:ml-8">
+              <button
+                class="border border-white text-white py-3 px-8 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300 rounded-lg"
+              >
+                VIEW ALL
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="topSection flex justify-between overflow-x-auto space-x-6 pb-4"
+        >
+          <div class="product-card flex-shrink-0 w-72 sm:w-80">
+            <div
+              class="product-image-container relative bg-[#1e1e1e] rounded-md overflow-hidden"
+            >
+              <img
+                src="./images/people1.png"
+                alt="CoreImpact Performance White"
+              />
+              <div class="absolute top-4 left-4 space-y-2">
+                <span
+                  class="bg-data-color-lime text-black font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >NEW</span
+                >
+                <span
+                  class="bg-black text-white font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >PRE-ORDER NOW</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300"
+            >
+              ADD TO CART
+            </button>
+
+            <div class="mt-4">
+              <p class="text-xs text-gray-400">Clothing</p>
+              <p class="text-lg font-semibold uppercase mt-1">
+                COREIMPACT PERFORMANCE - WHITE
+              </p>
+              <div class="flex items-center text-sm mt-1">
+                <span class="mr-2">$196.00</span>
+                <span
+                  class="bg-[#ccff00] text-black rounded-full font-semibold text-sm p-1"
+                  >SOLD OUT</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card flex-shrink-0 w-72 sm:w-80">
+            <div
+              class="product-image-container relative bg-[#1e1e1e] rounded-md overflow-hidden"
+            >
+              <img
+                src="./images/people2.png"
+                alt="CoreImpact Performance Black"
+              />
+              <div class="absolute top-4 left-4 space-y-2">
+                <span
+                  class="bg-data-color-lime text-black font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >NEW</span
+                >
+                <span
+                  class="bg-black text-white font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >PRE-ORDER NOW</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300"
+            >
+              VIEW PRODUCT
+            </button>
+
+            <div class="mt-4">
+              <p class="text-xs text-gray-400">Clothing</p>
+              <p class="text-lg font-semibold uppercase mt-1">
+                COREIMPACT PERFORMANCE - BLACK
+              </p>
+              <div class="flex items-center text-sm mt-1">
+                <span class="mr-2">$196.00</span>
+                <span
+                  class="bg-[#ccff00] text-black rounded-full font-semibold text-sm p-1"
+                  >SOLD OUT</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card flex-shrink-0 w-72 sm:w-80">
+            <div
+              class="product-image-container relative bg-[#1e1e1e] rounded-md overflow-hidden"
+            >
+              <img
+                src="./images/people3.png"
+                alt="CoreImpact Performance Red"
+              />
+              <div class="absolute top-4 left-4 space-y-2">
+                <span
+                  class="bg-gray-700 text-white font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >UPCOMING</span
+                >
+                <span
+                  class="bg-black text-white font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >AVAILABLE WINTER 25</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300"
+            >
+              NOTIFY ME
+            </button>
+
+            <div class="mt-4">
+              <p class="text-xs text-gray-400">Clothing</p>
+              <p class="text-lg font-semibold uppercase mt-1">
+                COREIMPACT PERFORMANCE - RED
+              </p>
+              <div class="flex items-center text-sm mt-1">
+                <span class="mr-2">$196.00</span>
+                <span
+                  class="bg-[#ccff00] text-black rounded-full font-semibold text-sm p-1"
+                  >SOLD OUT</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card flex-shrink-0 w-72 sm:w-80">
+            <div
+              class="product-image-container relative bg-[#1e1e1e] rounded-md overflow-hidden"
+            >
+              <img
+                src="./images/people4.png"
+                alt="CoreImpact Performance Blue"
+              />
+              <div class="absolute top-4 left-4 space-y-2">
+                <span
+                  class="bg-gray-700 text-white font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >UPCOMING</span
+                >
+                <span
+                  class="bg-black text-white font-semibold text-xs py-1 px-3 rounded-full uppercase"
+                  >AVAILABLE WINTER 25</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300"
+            >
+              NOTIFY ME
+            </button>
+
+            <div class="mt-4">
+              <p class="text-xs text-gray-400">Clothing</p>
+              <p class="text-lg font-semibold uppercase mt-1">
+                COREIMPACT PERFORMANCE - BLUE
+              </p>
+              <div class="flex items-center text-sm mt-1">
+                <span class="mr-2">$196.00</span>
+                <span
+                  class="bg-[#ccff00] text-black rounded-full font-semibold text-sm p-1"
+                  >SOLD OUT</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black px-4 lg:px-0">
+      <div class="bg-black py-16 px-4 topSection text-white">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl lg:text-7xl font-extrabold mx-auto topSection anton-like uppercase text-center text-white anton-like"
+          >
+            MOOKIE BETTS
+          </h2>
+          <p class="text-[#CCFF00] text-xl font-medium">
+            Tennessee's Ultimate Maverick: Redefining the
+            <span class="tracking-widest">GAME</span>
+          </p>
+        </div>
+
+        <div class="lg:flex lg:justify-center lg:gap-16 lg:items-center">
+          <div
+            class="lg:w-1/2 max-w-lg mx-auto mb-10 lg:mb-0 text-center lg:text-left"
+          >
+            <blockquote
+              class="text-xl sm:text-2xl italic font-light leading-relaxed"
+            >
+              “Core Impact reveals how my muscles fire, how I recover, and where
+              I can improve. That’s the edge I need to perform at my best.”
+            </blockquote>
+
+            <div class="mt-8 lg:mt-12">
+              <img
+                src="./images/signature.jpg"
+                alt="Mookie Betts' Signature"
+                class="signature mx-auto lg:mx-0"
+              />
+            </div>
+
+            <div class="mt-10 lg:mt-12 text-center lg:text-left">
+              <button
+                class="border border-white text-white py-3 px-8 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300"
+              >
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2 max-w-lg mx-auto">
+            <img
+              src="./images/bluebat.png"
+              alt="Mookie Betts in blue holding a bat with a sensor on his back"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-y-8 mt-20 sm:mt-24">
+          <div class="w-1/2 sm:w-1/5 text-center px-2">
+            <p class="stats-font data-color">171</p>
+            <p class="text-sm sm:text-base font-light text-gray-400">
+              Rotating Numbers
+            </p>
+          </div>
+
+          <div class="w-1/2 sm:w-1/5 text-center px-2">
+            <p class="stats-font data-color">.372</p>
+            <p class="text-sm sm:text-base font-light text-gray-400">
+              Batting average
+            </p>
+          </div>
+
+          <div class="w-1/2 sm:w-1/5 text-center px-2">
+            <p class="stats-font data-color">2X</p>
+            <p class="text-sm sm:text-base font-light text-gray-400">
+              American league MVP
+            </p>
+          </div>
+
+          <div class="w-1/2 sm:w-1/5 text-center px-2">
+            <p class="stats-font data-color">3X</p>
+            <p class="text-sm sm:text-base font-light text-gray-400">
+              World Series Champion
+            </p>
+          </div>
+
+          <div class="w-full sm:w-1/5 text-center px-2 mt-8 sm:mt-0">
+            <p class="stats-font data-color">291</p>
+            <p class="text-sm sm:text-base font-light text-gray-400">
+              Career Home Runs
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black pt-20 pb-28 px-4 lg:px-0">
+      <h1
+        class="text-4xl lg:text-7xl font-extrabold mx-auto topSection anton-like uppercase text-center text-white"
+      >
+        POWERING THE NEXT GENERATION OF
+        <span class="data-color"> CHAMPIONS </span>
+      </h1>
+
+      <div
+        class="topSection mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-8 mt-12 px-4 sm:px-0"
+      >
+        <img
+          src="./images/logo1.png"
+          alt="Cal Bears Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo2.png"
+          alt="Dodgers Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo3.png"
+          alt="Angels Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo4.png"
+          alt="MLB Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo5.png"
+          alt="Stanford Cardinal Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo6.png"
+          alt="UCLA Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo7.png"
+          alt="USC Trojans Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+        <img
+          src="./images/logo8.png"
+          alt="SF Giants Logo"
+          class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none"
+        />
+      </div>
+    </section>
     <section class="bg-[#1d1d1d]">
       <footer
         class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0"
@@ -643,11 +1159,41 @@
       </footer>
     </section>
     <script>
-      const btn = document.getElementById("menu-btn");
-      const menu = document.getElementById("mobile-menu");
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
 
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+        console.log("Button:", btn, "Menu:", menu);
+
+        if (btn && menu) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log("Button clicked");
+            menu.classList.toggle("hidden");
+          });
+
+          // Close menu when clicking on a link
+          const links = menu.querySelectorAll("a");
+          links.forEach((link) => {
+            link.addEventListener("click", function () {
+              menu.classList.add("hidden");
+            });
+          });
+
+          // Close menu when clicking outside
+          document.addEventListener("click", function (e) {
+            if (
+              !menu.contains(e.target) &&
+              !btn.contains(e.target) &&
+              !btn.parentElement.contains(e.target)
+            ) {
+              menu.classList.add("hidden");
+            }
+          });
+        } else {
+          console.error("Menu button or mobile menu not found");
+        }
       });
     </script>
   </body>
