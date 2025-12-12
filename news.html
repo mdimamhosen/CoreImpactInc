@@ -1,298 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latest NEWS</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
- <link rel="stylesheet" href="./style.css">
-</head>
-<body class="bg-black font-inter-tight">
-  <!-- Header Section -->
-  <section>
-    <div class="fixed-header-container">
-      <div class="bg-[#B5E745] text-gray-800 text-center py-1 text-xs sm:text-sm font-medium">
-        Pre-order your Impact Eco Suit today!
-      </div>
-    </div>
-
-    <section class="bg-black/20 backdrop-blur-sm border-b border-white/10 relative z-30">
-      <header class="topSection px-4 lg:px-0 text-white py-4 relative w-full">
-        <nav class="flex justify-between items-center w-full mx-auto">
-          <a href="index.html" class="flex items-center cursor-pointer">
-            <svg width="34" height="34" viewBox="0 0 54 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z" fill="white"/>
-              <path d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z" fill="white"/>
-              <path d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376" fill="white"/>
-            </svg>
-            <span class="text-3xl sm:text-4xl font-bold tracking-tight">coreimpact</span>
-          </a>
-
-          <div class="lg:hidden z-50">
-            <button id="menu-btn" class="text-white focus:outline-none p-2 cursor-pointer">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-              </svg>
-            </button>
-          </div>
-
-          <div id="menu" class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wider text-white">
-            <a href="about.html" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">ABOUT</a>
-            <a href="#" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">SPORTS</a>
-            <a href="#" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">TECH</a>
-            <a href="news.html" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">NEWS</a>
-            <a href="labs.html" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">LABS</a>
-          </div>
-
-          <div class="hidden lg:flex items-center space-x-4 sm:space-x-6">
-            <button class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-              </svg>
-            </button>
-            <button class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-              </svg>
-            </button>
-            <button class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-            </button>
-            <button class="bg-[#B5E745] text-black px-5 py-2.5 text-sm font-bold uppercase rounded-md shadow-lg hover:bg-black hover:text-[#b5e745] transition duration-300 shrink-0">
-              PRE-ORDER NOW
-            </button>
-          </div>
-        </nav>
-
-        <div id="mobile-menu" class="lg:hidden hidden mt-2 space-y-2 bg-black/95 rounded-lg p-4 absolute top-full left-0 right-0 z-50 mx-4">
-          <a href="about.html" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">ABOUT</a>
-          <a href="#" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">SPORTS</a>
-          <a href="#" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">TECH</a>
-          <a href="news.html" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">NEWS</a>
-          <a href="labs.html" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">LABS</a>
-          <button class="w-full bg-[#B5E745] text-black px-5 py-2.5 text-sm font-bold uppercase rounded-md shadow-lg hover:bg-black hover:text-[#b5e745] transition duration-300">
-            PRE-ORDER NOW
-          </button>
-        </div>
-      </header>
-    </section>
-  </section>
-  <section class="min-h-screen flex items-center justify-center py-10 px-5 sm:py-16 md:py-20">
-    <div class="w-full topSection text-center">
-      <h1 class="text-white font-anton text-4xl sm:text-5xl md:text-[64px] font-normal leading-[120%] tracking-[-1.92px] uppercase mb-12 sm:mb-16 md:mb-20">
-        Latest NEWS
-      </h1>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 sm:mb-16 md:mb-20">
-        <!-- Card 1 - Device Card -->
-        <div class="flex flex-col w-full max-w-[424px] mx-auto">
-          <div class="relative w-full aspect-[424/296] rounded-[10px] overflow-hidden mb-7">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/2e65f8aa78afb2de88b9d83d570af3386b59472f?width=872" 
-              alt="" 
-              class="absolute w-[103%] h-[103%] -left-[1.5%] -top-[1.5%] rounded-[10px] blur-[2.5px] object-cover"
-            >
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/8a779ecfc197404a9f2e9224404876102cf310ed?width=360" 
-              alt="Device" 
-              class="absolute w-[42.5%] h-[60%] left-[28.8%] top-[20%] object-contain"
-            >
-          </div>
-          <div class="flex flex-col gap-3 text-left px-2 sm:px-0">
-            <h3 class="text-white font-inter-tight text-xl sm:text-2xl font-bold leading-[34px] tracking-[-0.48px] line-clamp-2">
-              I was blown away with how accurate the MLM2Pro's spin rate and spin axis are compared to my friends higher end launch monitor."
-            </h3>
-            <p class="text-white/70 font-inter-tight text-[13px] font-normal leading-[30px] uppercase">
-              March 9, 2024
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="flex flex-col w-full max-w-[424px] mx-auto">
-          <div class="w-full aspect-[424/296] rounded-[10px] overflow-hidden mb-7">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/dddf9526f2b0ccd58d9fc6f51716b6437c87c41c?width=848" 
-              alt="News img 1" 
-              class="w-full h-full rounded-[10px] object-cover"
-            >
-          </div>
-          <div class="flex flex-col gap-3 text-left px-2 sm:px-0">
-            <h3 class="text-white font-inter-tight text-xl sm:text-2xl font-bold leading-[34px] tracking-[-0.48px] line-clamp-2">
-              Former MLB Tyson William Ross partners with Cor...
-            </h3>
-            <p class="text-white/70 font-inter-tight text-[13px] font-normal leading-[30px] uppercase">
-              March 9, 2024
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="flex flex-col w-full max-w-[424px] mx-auto">
-          <div class="w-full aspect-[424/296] rounded-[10px] overflow-hidden mb-7">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e5b173f29976dc54710be49a3eeace2d3c8ea1ed?width=848" 
-              alt="News img 1" 
-              class="w-full h-full rounded-[10px] object-cover"
-            >
-          </div>
-          <div class="flex flex-col gap-3 text-left px-2 sm:px-0">
-            <h3 class="text-white font-inter-tight text-xl sm:text-2xl font-bold leading-[34px] tracking-[-0.48px] line-clamp-2">
-              Former MLB Tyson William Ross partners with Cor...
-            </h3>
-            <p class="text-white/70 font-inter-tight text-[13px] font-normal leading-[30px] uppercase">
-              January 5, 2024
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <button class="w-full max-w-[212px] h-16 bg-[#D4FF00] hover:bg-[#C4EF00] border-none rounded-[5px] text-black text-center font-inter-tight text-lg font-bold cursor-pointer flex items-center justify-center mx-auto transition-colors duration-200">
-        SUBSCRIBE
-      </button>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <section class="bg-[#1d1d1d]">
-    <footer class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0">
-      <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
-        <div class="space-y-6">
-          <div class="flex items-center">
-            <svg width="34" height="34" viewBox="0 0 54 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z" fill="white"/>
-              <path d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z" fill="white"/>
-              <path d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376" fill="white"/>
-            </svg>
-            <span class="text-3xl sm:text-4xl font-bold tracking-tight">coreimpact</span>
-          </div>
-
-          <p class="text-sm text-gray-300 leading-relaxed max-w-xs sm:max-w-sm">
-            Real-Time Performance Tracking to Help Athletes Perform at Their Best.
-          </p>
-
-          <div class="flex items-center space-x-3 sm:space-x-4">
-            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
-              F
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latest NEWS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="bg-black font-inter-tight">
+        <!-- Header Section -->
+        <section>
+            <div class="fixed-header-container">
+                <div class="bg-[#B5E745] text-gray-800 text-center py-1 text-xs sm:text-sm font-medium">
+                    Pre-order your Impact Eco Suit today!
+                </div>
             </div>
-            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
-              I
+            <section class="bg-black/20 backdrop-blur-sm border-b border-white/10 relative z-30">
+                <header class="topSection px-4 lg:px-0 text-white py-4 relative w-full">
+                    <nav class="flex justify-between items-center w-full mx-auto">
+                        <a href="index.html" class="flex items-center cursor-pointer">
+                            <svg
+                                width="34"
+                                height="34"
+                                viewBox="0 0 54 45"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z" fill="white"/>
+                                <path d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z" fill="white"/>
+                                <path d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376" fill="white"/>
+                            </svg>
+                            <span class="text-3xl sm:text-4xl font-bold tracking-tight">coreimpact</span>
+                        </a>
+                        <div class="lg:hidden z-50">
+                            <button id="menu-btn" class="text-white focus:outline-none p-2 cursor-pointer">
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="menu" class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wider text-white">
+                            <a href="about.html" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">ABOUT</a>
+                            <a href="#" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">SPORTS</a>
+                            <a href="#" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">TECH</a>
+                            <a href="news.html" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">NEWS</a>
+                            <a href="labs.html" class="hover:bg-[#b5e745] hover:text-black transition duration-200 px-2 py-1 rounded">LABS</a>
+                        </div>
+                        <div class="hidden lg:flex items-center space-x-4 sm:space-x-6">
+                            <button class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                    />
+                                </svg>
+                            </button>
+                            <button class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                                    />
+                                </svg>
+                            </button>
+                            <button class="p-2 text-white hover:text-[#b5e745] rounded-full transition duration-200">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                    />
+                                </svg>
+                            </button>
+                            <button class="bg-[#B5E745] text-black px-5 py-2.5 text-sm font-bold uppercase rounded-md shadow-lg hover:bg-black hover:text-[#b5e745] transition duration-300 shrink-0">
+                                PRE-ORDER NOW
+                            </button>
+                        </div>
+                    </nav>
+                    <div id="mobile-menu" class="lg:hidden hidden mt-2 space-y-2 bg-black/95 rounded-lg p-4 absolute top-full left-0 right-0 z-50 mx-4">
+                        <a href="about.html" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">ABOUT</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">SPORTS</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">TECH</a>
+                        <a href="news.html" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">NEWS</a>
+                        <a href="labs.html" class="block px-4 py-2 hover:bg-[#b5e745] hover:text-black rounded transition duration-200">LABS</a>
+                        <button class="w-full bg-[#B5E745] text-black px-5 py-2.5 text-sm font-bold uppercase rounded-md shadow-lg hover:bg-black hover:text-[#b5e745] transition duration-300">
+                            PRE-ORDER NOW
+                        </button>
+                    </div>
+                </header>
+            </section>
+        </section>
+        <section class="min-h-screen flex items-center justify-center py-10 px-5 sm:py-16 md:py-20">
+            <div class="w-full topSection text-center">
+                <h1 class="text-white font-anton text-4xl sm:text-5xl md:text-[64px] font-normal leading-[120%] tracking-[-1.92px] uppercase mb-12 sm:mb-16 md:mb-20">
+                    Latest NEWS
+                </h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 sm:mb-16 md:mb-20">
+                    <!-- Card 1 - Device Card -->
+                    <div class="flex flex-col w-full max-w-[424px] mx-auto">
+                        <div class="relative w-full aspect-[424/296] rounded-[10px] overflow-hidden mb-7">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/2e65f8aa78afb2de88b9d83d570af3386b59472f?width=872" alt="" class="absolute w-[103%] h-[103%] -left-[1.5%] -top-[1.5%] rounded-[10px] blur-[2.5px] object-cover">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/8a779ecfc197404a9f2e9224404876102cf310ed?width=360" alt="Device" class="absolute w-[42.5%] h-[60%] left-[28.8%] top-[20%] object-contain">
+                        </div>
+                        <div class="flex flex-col gap-3 text-left px-2 sm:px-0">
+                            <h3 class="text-white font-inter-tight text-xl sm:text-2xl font-bold leading-[34px] tracking-[-0.48px] line-clamp-2">
+                                I was blown away with how accurate the MLM2Pro's spin rate and spin axis are compared to my friends higher end launch monitor."
+                            </h3>
+                            <p class="text-white/70 font-inter-tight text-[13px] font-normal leading-[30px] uppercase">
+                                March 9, 2024
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex flex-col w-full max-w-[424px] mx-auto">
+                        <div class="w-full aspect-[424/296] rounded-[10px] overflow-hidden mb-7">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/dddf9526f2b0ccd58d9fc6f51716b6437c87c41c?width=848" alt="News img 1" class="w-full h-full rounded-[10px] object-cover">
+                        </div>
+                        <div class="flex flex-col gap-3 text-left px-2 sm:px-0">
+                            <h3 class="text-white font-inter-tight text-xl sm:text-2xl font-bold leading-[34px] tracking-[-0.48px] line-clamp-2">
+                                Former MLB Tyson William Ross partners with Cor...
+                            </h3>
+                            <p class="text-white/70 font-inter-tight text-[13px] font-normal leading-[30px] uppercase">
+                                March 9, 2024
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="flex flex-col w-full max-w-[424px] mx-auto">
+                        <div class="w-full aspect-[424/296] rounded-[10px] overflow-hidden mb-7">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/e5b173f29976dc54710be49a3eeace2d3c8ea1ed?width=848" alt="News img 1" class="w-full h-full rounded-[10px] object-cover">
+                        </div>
+                        <div class="flex flex-col gap-3 text-left px-2 sm:px-0">
+                            <h3 class="text-white font-inter-tight text-xl sm:text-2xl font-bold leading-[34px] tracking-[-0.48px] line-clamp-2">
+                                Former MLB Tyson William Ross partners with Cor...
+                            </h3>
+                            <p class="text-white/70 font-inter-tight text-[13px] font-normal leading-[30px] uppercase">
+                                January 5, 2024
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-full max-w-[212px] h-16 bg-[#D4FF00] hover:bg-[#C4EF00] border-none rounded-[5px] text-black text-center font-inter-tight text-lg font-bold cursor-pointer flex items-center justify-center mx-auto transition-colors duration-200">
+                    SUBSCRIBE
+                </button>
             </div>
-            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
-              X
-            </div>
-            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-xs hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
-              in
-            </div>
-          </div>
-        </div>
-
-        <div class="w-full md:w-auto">
-          <label class="text-sm text-gray-300">Enter your email</label>
-          <div class="flex border-b border-gray-500 mt-2 pb-2">
-            <input type="text" placeholder="Enter your email" class="flex-1 bg-transparent outline-none text-sm text-gray-200 placeholder-gray-500"/>
-            <button class="text-sm hover:bg-[#b5e745] hover:text-black px-2 py-1 rounded transition duration-200">
-              Subscribe
-            </button>
-          </div>
-          <p class="mt-3 text-xs text-gray-400 max-w-xs sm:max-w-sm">
-            Subscribe our newsletter so that you can get offer and discount.
-          </p>
-        </div>
-      </div>
-
-      <div class="py-10 sm:py-12 md:py-16 overflow-hidden">
-        <h1 class="giant-text text-white font-extrabold text-center uppercase whitespace-nowrap">
-          COREIMPACT INC.
-        </h1>
-      </div>
-
-      <hr class="border-gray-700 mb-6" />
-
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0">
-        <p class="text-white">
-          Copyright - 2025 | All rights reserved by Coreimpact Inc.
-        </p>
-        <div class="flex items-center space-x-1 cursor-pointer hover:text-[#b5e745] transition duration-200">
-          <span class="font-semibold text-whtie">USD $</span>
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </div>
-    </footer>
-  </section>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.getElementById("menu-btn");
-      const menu = document.getElementById("mobile-menu");
-
-      console.log("Button:", btn, "Menu:", menu);
-
-      if (btn && menu) {
-        btn.addEventListener("click", function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          console.log("Button clicked");
-          menu.classList.toggle("hidden");
-        });
-
-        // Close menu when clicking on a link
-        const links = menu.querySelectorAll("a");
-        links.forEach((link) => {
-          link.addEventListener("click", function () {
-            menu.classList.add("hidden");
-          });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener("click", function (e) {
-          if (
-            !menu.contains(e.target) &&
-            !btn.contains(e.target) &&
-            !btn.parentElement.contains(e.target)
-          ) {
-            menu.classList.add("hidden");
-          }
-        });
-      } else {
-        console.error("Menu button or mobile menu not found");
-      }
-    });
-  </script>
-</body>
+        </section>
+        <!-- Footer Section -->
+        <section class="bg-[#1d1d1d]">
+            <footer class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0">
+                <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <svg
+                                width="34"
+                                height="34"
+                                viewBox="0 0 54 45"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z" fill="white"/>
+                                <path d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z" fill="white"/>
+                                <path d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376" fill="white"/>
+                            </svg>
+                            <span class="text-3xl sm:text-4xl font-bold tracking-tight">coreimpact</span>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed max-w-xs sm:max-w-sm">
+                            Real-Time Performance Tracking to Help Athletes Perform at Their Best.
+                        </p>
+                        <div class="flex items-center space-x-3 sm:space-x-4">
+                            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
+                                F
+                            </div>
+                            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
+                                I
+                            </div>
+                            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-sm hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
+                                X
+                            </div>
+                            <div class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-gray-300 text-xs hover:bg-[#b5e745] hover:text-black transition duration-200 cursor-pointer">
+                                in
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <label class="text-sm text-gray-300">Enter your email</label>
+                        <div class="flex border-b border-gray-500 mt-2 pb-2">
+                            <input type="text" placeholder="Enter your email" class="flex-1 bg-transparent outline-none text-sm text-gray-200 placeholder-gray-500">
+                            <button class="text-sm hover:bg-[#b5e745] hover:text-black px-2 py-1 rounded transition duration-200">
+                                Subscribe
+                            </button>
+                        </div>
+                        <p class="mt-3 text-xs text-gray-400 max-w-xs sm:max-w-sm">
+                            Subscribe our newsletter so that you can get offer and discount.
+                        </p>
+                    </div>
+                </div>
+                <div class="py-10 sm:py-12 md:py-16 overflow-hidden">
+                    <h1 class="giant-text text-white font-extrabold text-center uppercase whitespace-nowrap">
+                        COREIMPACT INC.
+                    </h1>
+                </div>
+                <hr class="border-gray-700 mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0">
+                    <p class="text-white">
+                        Copyright - 2025 | All rights reserved by Coreimpact Inc.
+                    </p>
+                    <div class="flex items-center space-x-1 cursor-pointer hover:text-[#b5e745] transition duration-200">
+                        <span class="font-semibold text-whtie">USD $</span>
+                        <svg
+                            class="w-3 h-3"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <script src="./script.js"></script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
