@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CoreImpact Inc.</title>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -308,28 +308,7 @@
             </div>
         </section>
     </section>
-    <section class="bg-black">
-        <section class="w-full topSection min-h-[70vh] text-white px-4 lg:px-0 relative overflow-hidden">
-            <div class="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:top-1 lg:left-1 lg:transform-none w-full lg:w-fit flex justify-center z-0">
-                <h1 class="small-heading anton-like uppercase text-left large-text">
-                    Beyond a
-                    <br>
-                    Wearable
-                </h1>
-            </div>
-            <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full md:left-1/2 md:transform md:-translate-x-1/2 lg:bottom-20 lg:right-10 lg:left-auto lg:transform-none flex flex-col justify-center items-center gap-2 z-20">
-                <h1 class="small-heading w-full text-center anton-like uppercase lg:text-right large-text">
-                    It’s a Full-Body
-                    <br>
-                    Performance System
-                </h1>
-                <button class="w-fit bg-[#C8FF4D] text-black px-6 py-3 font-bold uppercase text-sm rounded-md hover:bg-lime-400 transition z-20">
-                    Pre-order Now
-                </button>
-            </div>
-            <img src="./images/image5.png" alt="product image" class="absolute inset-0 w-full h-full object-contain z-10">
-        </section>
-    </section>
+
     <section class="bg-[#121212] px-4 lg:px-0">
         <div class="bg-[#121212] py-16 px-4 sm:px-6 lg:px-16 text-white">
             <div class="pb-8 mb-12">
@@ -353,7 +332,7 @@
                     </div>
                 </div>
             </div>
-            <div class="topSection flex justify-between overflow-x-auto space-x-6 pb-4">
+            <div class="topSection custom-scrollbar-container flex justify-between overflow-x-auto space-x-6 pb-4">
                 <div class="product-card flex-shrink-0 w-72 sm:w-80">
                     <div class="product-image-container relative bg-[#1e1e1e] rounded-md overflow-hidden">
                         <img src="./images/people1.png" alt="CoreImpact Performance White">
@@ -365,10 +344,10 @@
                             </span
                 >
                         </div>
+                        <button class="product-button absolute bottom-0 left-0 right-0 bg-data-color-lime text-black w-full py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
+                            ADD TO CART
+                        </button>
                     </div>
-                    <button class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
-                        ADD TO CART
-                    </button>
                     <div class="mt-4">
                         <p class="text-xs text-gray-400">Clothing</p>
                         <p class="text-lg font-semibold uppercase mt-1">
@@ -393,10 +372,10 @@
                             </span
                 >
                         </div>
+                        <button class="product-button absolute bottom-0 left-0 right-0 bg-data-color-lime text-black w-full py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
+                            VIEW PRODUCT
+                        </button>
                     </div>
-                    <button class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
-                        VIEW PRODUCT
-                    </button>
                     <div class="mt-4">
                         <p class="text-xs text-gray-400">Clothing</p>
                         <p class="text-lg font-semibold uppercase mt-1">
@@ -421,10 +400,10 @@
                             </span
                 >
                         </div>
+                        <button class="product-button absolute bottom-0 left-0 right-0 bg-data-color-lime text-black w-full py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
+                            NOTIFY ME
+                        </button>
                     </div>
-                    <button class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
-                        NOTIFY ME
-                    </button>
                     <div class="mt-4">
                         <p class="text-xs text-gray-400">Clothing</p>
                         <p class="text-lg font-semibold uppercase mt-1">
@@ -449,10 +428,10 @@
                             </span
                 >
                         </div>
+                        <button class="product-button absolute bottom-0 left-0 right-0 bg-data-color-lime text-black w-full py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
+                            NOTIFY ME
+                        </button>
                     </div>
-                    <button class="product-button bg-data-color-lime text-black w-full py-3 mt-4 text-sm font-bold uppercase hover:opacity-80 transition duration-300">
-                        NOTIFY ME
-                    </button>
                     <div class="mt-4">
                         <p class="text-xs text-gray-400">Clothing</p>
                         <p class="text-lg font-semibold uppercase mt-1">
@@ -549,8 +528,31 @@
             <img src="./images/logo8.png" alt="SF Giants Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
         </div>
     </section>
+        <section class="bg-black">
+        <section class="w-full topSection py-20 min-h-[70vh] text-white px-4 lg:px-0 relative overflow-hidden">
+            <div class="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:top-1 lg:left-1 lg:transform-none w-full lg:w-fit flex justify-center z-0">
+                <h1 class="small-heading anton-like uppercase text-left large-text">
+                    Beyond a
+                    <br>
+                    Wearable
+                </h1>
+            </div>
+            <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full md:left-1/2 md:transform md:-translate-x-1/2 lg:bottom-20 lg:right-10 lg:left-auto lg:transform-none flex flex-col justify-center items-center gap-2 z-20">
+                <h1 class="small-heading w-full text-center anton-like uppercase lg:text-right large-text">
+                    It’s a Full-Body
+                    <br>
+                    Performance System
+                </h1>
+                <button class="w-fit bg-[#C8FF4D] text-black px-6 py-3 font-bold uppercase text-sm rounded-md hover:bg-lime-400 transition z-20">
+                    Pre-order Now
+                </button>
+            </div>
+            <img src="./images/image5.png" alt="product image" class="absolute inset-0 w-full h-full object-contain z-10">
+        </section>
+    </section>
+    
     <section class="bg-[#1d1d1d]">
-        <footer class="w-full mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0">
+        <footer class="topSection   mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0">
             <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
                 <div class="space-y-6">
                     <div class="flex items-center">
@@ -601,11 +603,9 @@
                     </p>
                 </div>
             </div>
-            <div class="py-10 sm:py-12 md:py-16 overflow-hidden">
-                <h1 class="giant-text text-white font-extrabold text-center uppercase whitespace-nowrap">
-                    COREIMPACT INC.
-                </h1>
-            </div>
+          <div class="py-10 sm:py-12 md:py-16 overflow-hidden w-full">
+  <h1 id="fitText">COREIMPACT INC.</h1>
+</div>
             <hr class="border-gray-700 mb-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0">
                 <p class="text-white">
@@ -630,6 +630,9 @@
             </div>
         </footer>
     </section>
+
+    <div id="toast-container" class="fixed top-4 right-4 z-[9999] flex flex-col gap-3"></div>
+
     <script src="./script.js"></script>
 </body>
 </html>
