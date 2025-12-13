@@ -9,6 +9,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./style.css">
+        <style>
+            .labs-heading {
+                font-family: 'Anton', sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 96px;
+                line-height: 100%;
+                letter-spacing: -3%;
+                text-transform: uppercase;
+            }
+            .labs-tagline {
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: -3%;
+                text-transform: uppercase;
+            }
+            .labs-description {
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+        </style>
     </head>
     <body class="bg-black anton-like">
         <!-- Header Section -->
@@ -147,14 +175,14 @@
             <section class="w-full h-auto min-h-[600px] lg:h-[1006px] flex items-center justify-center py-16 px-4 lg:px-0 topSection mx-auto">
                 <div class="w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
                     <div class="lg:w-1/2 space-y-8 lg:pr-16 text-center lg:text-left">
-                        <h1 class="smart-core-heading anton-like uppercase">
+                        <h1 class="labs-heading">
                             Impact
                             <span class="data-color">Labs</span>
                         </h1>
-                        <p class="text-lg text-white font-semibold text-center lg:text-left" style="font-family: 'Inter', sans-serif;">
+                        <p class="labs-tagline text-white text-center lg:text-left">
                             The future of performance starts here.
                         </p>
-                        <p class="text-white text-xs font-normal text-center lg:text-left" style="font-family: 'Inter', sans-serif;">
+                        <p class="labs-description text-white text-center lg:text-left">
                             Welcome to Impact LABS, our hub for innovation, AI, and next-gen tech. Here, we design new products, test breakthrough sensors, and turn raw data into powerful performance insights. Baseball was just the beginning — the next wave is already in motion.
                         </p>
                         <button class="w-full max-w-[212px] h-16 bg-[#D4FF00] hover:bg-[#C4EF00] border-none rounded-[5px] text-black text-center font-inter-tight text-lg font-bold cursor-pointer flex items-center justify-center  transition-colors duration-200">
