@@ -166,7 +166,7 @@
       }
 
       .core-color {
-        color: #ccdc48;
+        color: #CCDC48;
       }
 
       .product-visual-container {
@@ -176,7 +176,7 @@
       }
 
       .suit-color {
-        color: #ccdc48;
+        color: #CCDC48;
       }
 
       .body-text {
@@ -200,7 +200,7 @@
       }
 
       .data-color {
-        color: #ccdc48;
+        color: #CCDC48;
       }
 
       .small-heading {
@@ -344,7 +344,7 @@
 
 .toast.success {
   background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-  border-left: 4px solid #b5e745;
+  border-left: 4px solid #CCDC48;
   color: white;
 }
 
