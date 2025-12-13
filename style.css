@@ -102,10 +102,22 @@
         font-family: "Anton", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 96px;
+        font-size: 32px;
         line-height: 99%;
         letter-spacing: 0%;
         text-transform: uppercase;
+      }
+
+      @media (min-width: 640px) {
+        .feature-heading {
+          font-size: 48px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .feature-heading {
+          font-size: 96px;
+        }
       }
 
       @media (min-width: 1024px) {
