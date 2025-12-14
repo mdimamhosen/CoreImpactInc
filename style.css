@@ -454,6 +454,6 @@
   font-family: "Anton", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(3rem, 18vw, 22rem);
+  font-size: clamp(3rem,11vw, 28rem);
   line-height: 1;
 }
