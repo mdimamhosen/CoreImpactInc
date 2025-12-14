@@ -444,3 +444,16 @@
     right: 16px;
   }
 }
+
+
+
+#fitText {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 18vw, 22rem);
+  line-height: 1;
+}
