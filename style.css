@@ -242,7 +242,7 @@
       }
 
       .custom-scrollbar-container::-webkit-scrollbar-thumb {
-        background: #88b04b;
+        background: #CCDC48;
         border-radius: 10px;
       }
 
@@ -271,10 +271,10 @@
       }
 
       .data-color-lime {
-        color: #ccff00;
+        color: #CCDC48;
       }
       .bg-data-color-lime {
-        background-color: #ccff00;
+        background-color: #CCDC48;
       }
       .product-scroll-container::-webkit-scrollbar {
         height: 6px;
