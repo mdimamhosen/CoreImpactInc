@@ -120,6 +120,13 @@
         }
       }
 
+      /* Mobile-only bump for the first hero subheading 'Beyond a Wearable' */
+      @media (max-width: 639px) {
+        .feature-heading-primary {
+          font-size: 40px;
+        }
+      }
+
       @media (min-width: 1024px) {
         footer {
           max-width: 1440px;
