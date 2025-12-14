@@ -32,6 +32,24 @@
                     font-size: 64px;
                 }
             }
+
+            /* Mobile-only reductions for feature list text and icons */
+            @media (max-width: 640px) {
+                .tech-feature-list svg,
+                .tech-feature-list img {
+                    width: 24px !important;
+                    height: 24px !important;
+                }
+
+                .tech-feature-list span {
+                    font-size: 18px !important;
+                    line-height: 24px !important;
+                }
+
+                .tech-feature-list li {
+                    gap: 0.5rem;
+                }
+            }
         </style>
     </head>
     <body style="font-family: 'Inter', sans-serif;">
@@ -297,7 +315,7 @@
                             <br>
                             <span class="text-[#CCDC48]">INTELLIGENT SECOND SKIN</span>
                         </h2>
-                        <p class="text-white mt-4 max-w-lg" style="font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 16px; line-height: 100%; letter-spacing: 0%;">
+                        <p class="text-white mt-4 max-w-lg" style="font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 16px;   letter-spacing: 0%;">
                             The Coreimpact wearable is an advanced compression garment with embedded 
                     EMG sensors that seamlessly captures real-time, full body activation.
                         </p>
@@ -307,7 +325,7 @@
                                     <span class="text-white">EMBEDDED</span>
                                     SENSORS:
                                 </h3>
-                                <ul class="space-y-7">
+                                <ul class="space-y-7 tech-feature-list">
                                     <li class="flex items-center gap-4">
                                         <svg
                                             width="50"
@@ -356,7 +374,7 @@
                                     <span class="text-white">WEARABLE</span>
                                     TECHNOLOGY:
                                 </h3>
-                                <ul class="space-y-7 text-sm">
+                                <ul class="space-y-7 text-sm tech-feature-list">
                                       <li class="flex items-center gap-4">
                                         <svg
                                             width="43"
@@ -473,7 +491,7 @@
                         <p class="text-white text-base   mt-2 max-w-2xl   mx-auto" style="font-family: 'Inter Tight', sans-serif;">
                             Real-time insights that elevate every move.
                         </p>
-                        <p class="text-white max-w-3xl mt-5 mx-auto" style="font-family: 'Inter Tight', sans-serif; font-weight: 500; font-style: normal; font-size: 16px; line-height: 100%; letter-spacing: 0%; text-align: center;  ">
+                        <p class="text-white max-w-3xl mt-5 mx-auto" style="font-family: 'Inter Tight', sans-serif; font-weight: 500; font-style: normal; font-size: 16px;  letter-spacing: 0%; text-align: center;  ">
                             The DAE's data analytics engine takes raw, complex bio-signals and transforms it into clear, actionable
                 insights—most notably through proprietary
                             <span class="text-[#CCDC48]   uppercase font-bold">

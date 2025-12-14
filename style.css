@@ -282,13 +282,13 @@
   .slider-card {
     width: 90vw;
     max-width: 320px;
-    min-height: clamp(460px, 95vw, 540px);
+    min-height: clamp(540px, 98vw, 620px);
     display: flex;
     flex-direction: column;
   }
 
   .slider-card > .relative {
-    height: clamp(300px, 60vw, 360px);
+    height: clamp(380px, 65vw, 460px);
   }
 
   .slider-card > .relative img {
