@@ -241,10 +241,10 @@
             <div class="absolute inset-0 bg-black/20"></div>
             <div class="relative topSection px-4 lg:px-0 z-10 flex items-center h-full">
                 <div class="text-left text-white font-extrabold uppercase leading-tight">
-                    <h1 class="text-4xl text-left sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl hero-text">
+                    <h1 class="hero-text" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 128px); line-height: 120%; letter-spacing: -0.03em; text-transform: uppercase; text-align: left;">
                         Train Smarter.
                     </h1>
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl hero-text mt-2">
+                    <h1 class="hero-text mt-2" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 128px); line-height: 120%; letter-spacing: -0.03em; text-transform: uppercase; text-align: left;">
                         Perform Stronger.
                     </h1>
                 </div>
@@ -254,12 +254,12 @@
     <section class="bg-black">
         <div class="bg-black py-16 px-4 lg:px-0 topSection relative">
             <!-- Navigation Buttons -->
-            <button id="slider-prev" class="hidden lg:block absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
+            <button id="slider-prev" class="block lg:block absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
             </button>
-            <button id="slider-next" class="hidden lg:block absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
+            <button id="slider-next" class="block lg:block absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
@@ -268,7 +268,7 @@
             <div id="cards-slider" class="overflow-hidden">
                 <div id="cards-track" class="flex transition-transform duration-500 ease-in-out gap-5 lg:gap-8">
                 <!-- Original Cards -->
-                <div class="flex-shrink-0 w-80 lg:w-[calc(33.333%-1.5rem)] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[calc(33.333%-1.5rem)] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image6.png" alt="Abstract illustration of muscle fibers and activation" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -282,7 +282,7 @@
               revealing power, balance, and coordination in every movement.
                     </p>
                 </div>
-                <div class="flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image7.png" alt="Abstract illustration of a runner with a red heartbeat visualization" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -294,7 +294,7 @@
               recovery, helping optimize intensity and endurance.
                     </p>
                 </div>
-                <div class="flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image8.png" alt="Abstract illustration of a runner with a blue lung visualization" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -308,7 +308,7 @@
               fatigue, and aerobic capacity across every session.
                     </p>
                 </div>
-                <div class="flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image9.png" alt="Abstract illustration of performance graphs and data trends" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -321,7 +321,7 @@
                     </p>
                 </div>
                 <!-- Cloned Cards for Seamless Loop -->
-                <div class="flex-shrink-0 w-80 lg:w-[calc(33.333%-1.5rem)] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[calc(33.333%-1.5rem)] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image6.png" alt="Abstract illustration of muscle fibers and activation" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -335,7 +335,7 @@
               revealing power, balance, and coordination in every movement.
                     </p>
                 </div>
-                <div class="flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image7.png" alt="Abstract illustration of a runner with a red heartbeat visualization" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -347,7 +347,7 @@
               recovery, helping optimize intensity and endurance.
                     </p>
                 </div>
-                <div class="flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image8.png" alt="Abstract illustration of a runner with a blue lung visualization" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -361,7 +361,7 @@
               fatigue, and aerobic capacity across every session.
                     </p>
                 </div>
-                <div class="flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
+                <div class="slider-card flex-shrink-0 w-80 lg:w-[28%] lg:min-w-[320px] lg:custom-card-dims text-white rounded-lg overflow-hidden shadow-lg">
                     <div class="relative">
                         <img src="./images/image9.png" alt="Abstract illustration of performance graphs and data trends" class="w-full h-80 object-cover lg:custom-card-dims rounded-xl" style="border-radius: 12px !important;">
                         <div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
@@ -378,7 +378,7 @@
     </section>
     <section class="bg-black flex items-center justify-center">
         <div id="ecosystem-section" class="w-full topSection px-4 lg:px-0 mx-auto bg-black flex flex-col items-center justify-between py-12">
-            <h1 class="smart-core-heading anton-like uppercase text-center  text-white">
+            <h1 class="smart-core-heading anton-like text-white" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 128px); line-height: 120%; letter-spacing: -0.03em; text-transform: uppercase; text-align: center;">
                 OUR ECOSYSTEM
             </h1>
             <div class="flex items-center justify-center flex-grow w-full max-w-4xl">
@@ -397,7 +397,7 @@
     <section class="bg-black flex items-center justify-center">
         <section class="w-full flex flex-col lg:flex-row topSection px-4 lg:px-0 flex items-center   py-24">
             <div class="w-full mx-auto   text-left    ">
-                <h1 class="index-section-heading text-white text-left   ">
+                <h1 class="index-section-heading text-white text-left" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
                     THE SMART
                     <span class="core-color">CORE</span>
                 </h1>
@@ -428,7 +428,7 @@
       " class="suit-section relative w-full flex items-center justify-center">
     <div class="absolute inset-0 topSection mx-auto flex items-center justify-end px-4 lg:px-0">
         <div class="space-y-6 text-right w-full max-w-md lg:max-w-lg">
-            <h1 class="index-section-heading text-center lg:text-left text-white">
+            <h1 class="index-section-heading text-center lg:text-left text-white" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
                 THE
                 <span class="suit-color">SUIT</span>
             </h1>
@@ -443,7 +443,7 @@
     <section class="w-full h-auto min-h-[600px] lg:h-[1006px] flex items-center justify-center py-16 px-4 lg:px-0 topSection mx-auto">
         <div class="w-full mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
             <div class="lg:w-1/2 space-y-8 lg:pr-16 text-center lg:text-left">
-                <h1 class="index-section-heading text-white">
+                <h1 class="index-section-heading text-white" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
                     THE
                     <span class="data-color">DATA</span>
                 </h1>
@@ -485,12 +485,12 @@
         </div>
         <div class="topSection relative">
             <!-- Navigation Buttons for Products -->
-            <button id="products-slider-prev" class="hidden lg:block absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
+            <button id="products-slider-prev" class="block lg:block absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
             </button>
-            <button id="products-slider-next" class="hidden lg:block absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
+            <button id="products-slider-next" class="block lg:block absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
@@ -1105,6 +1105,25 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     
+        let touchStartX = null;
+        cardsTrack.addEventListener('touchstart', function(e) {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+
+        cardsTrack.addEventListener('touchend', function(e) {
+            if (touchStartX === null) return;
+            const diffX = e.changedTouches[0].clientX - touchStartX;
+            touchStartX = null;
+
+            if (Math.abs(diffX) > 40) {
+                if (diffX < 0) {
+                    sliderNext.click();
+                } else {
+                    sliderPrev.click();
+                }
+            }
+        }, { passive: true });
+    
     cardsTrack.addEventListener('transitionend', handleTransitionEnd);
     
     sliderNext.addEventListener('click', function() {
@@ -1170,6 +1189,25 @@ document.addEventListener('DOMContentLoaded', function() {
         updateProductsSlider(false);
       }
     }
+
+        let productsTouchStartX = null;
+        productsTrack.addEventListener('touchstart', function(e) {
+            productsTouchStartX = e.touches[0].clientX;
+        }, { passive: true });
+
+        productsTrack.addEventListener('touchend', function(e) {
+            if (productsTouchStartX === null) return;
+            const diffX = e.changedTouches[0].clientX - productsTouchStartX;
+            productsTouchStartX = null;
+
+            if (Math.abs(diffX) > 40) {
+                if (diffX < 0) {
+                    productsSliderNext.click();
+                } else {
+                    productsSliderPrev.click();
+                }
+            }
+        }, { passive: true });
     
     productsTrack.addEventListener('transitionend', handleProductsTransitionEnd);
     
