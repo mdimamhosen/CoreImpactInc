@@ -438,16 +438,18 @@
     </section>
     <section class="bg-black flex items-center justify-center">
         <section class="w-full flex flex-col lg:flex-row topSection px-4 lg:px-0 flex items-center   py-24">
-            <div class="w-full mx-auto   text-left    ">
-                <h1 class="index-section-heading text-white text-left" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
-                    THE SMART
-                    <span class="core-color">CORE</span>
-                </h1>
-                <p class="text-white text-sm lg:text-lg font-normal lg:max-w-md" style="font-family: 'Inter', sans-serif;">
-                    The Core captures real-time muscle, breathing, and heart-rate
-              signals with precision—unlocking insights faster than the eye can
-              see.
-                </p>
+            <div class="w-full mx-auto text-left relative">
+                <!-- Mobile: absolute top-left, lg+: static -->
+                <div class="absolute top-0 left-0 z-10 p-4 flex flex-col items-start lg:static lg:p-0 lg:block">
+                    <h1 class="index-section-heading text-white text-left" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(32px, 8vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
+                        THE SMART
+                        <span class="core-color">CORE</span>
+                    </h1>
+                    <p class="text-white text-sm lg:text-lg font-normal lg:max-w-md" style="font-family: 'Inter', sans-serif;">
+                        The Core captures real-time muscle, breathing, and heart-rate<br class="block lg:hidden"/>
+                        signals with precision—unlocking insights faster than the eye can see.
+                    </p>
+                </div>
             </div>
             <div class="lg:w-1/2 flex justify-center lg:justify-end">
                 <div class="product-visual-container bg-gray-800 rounded-full shadow-2xl overflow-hidden relative">
@@ -470,13 +472,11 @@
       " class="suit-section relative w-full flex items-center justify-center">
     <div class="absolute inset-0 topSection mx-auto flex items-center justify-end px-4 lg:px-0">
         <div class="space-y-6 text-right w-full max-w-md lg:max-w-lg">
-            <h1 class="index-section-heading text-center lg:text-left text-white" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(48px, 12vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
-                THE
-                <span class="suit-color">SUIT</span>
+            <h1 class="index-section-heading text-left lg:text-left text-white" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: clamp(32px, 8vw, 96px); line-height: 100%; letter-spacing: -0.03em; text-transform: uppercase;">
+                THE <span class="suit-color">SUIT</span>
             </h1>
             <p class="text-white text-left text-sm lg:text-lg font-normal lg:max-w-md" style="font-family: 'Inter', sans-serif;">
-                The Suit is a second skin that keeps sensors secure for top-level
-            accuracy—lightweight, breathable, and built to amplify your data.
+                The Suit is a second skin that keeps sensors secure for top-level accuracy—lightweight, breathable, and built to amplify your data.
             </p>
         </div>
     </div>
@@ -854,16 +854,26 @@
         <br>
         <span class="data-color"> CHAMPIONS</span>
     </h1>
-    <div class="topSection mx-auto flex flex-wrap items-center justify-center gap-x-10 gap-y-8 mt-12 px-4 sm:px-0">
-        <img src="./images/logo1.png" alt="Cal Bears Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo2.png" alt="Dodgers Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo3.png" alt="Angels Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo4.png" alt="MLB Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo5.png" alt="Stanford Cardinal Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo6.png" alt="UCLA Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo7.png" alt="USC Trojans Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
-        <img src="./images/logo8.png" alt="SF Giants Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+    <div class="topSection mx-auto flex flex-nowrap sm:flex-wrap items-center justify-start sm:justify-center gap-x-10 gap-y-8 mt-12 px-4 sm:px-0 overflow-x-auto sm:overflow-visible hide-scrollbar">
+            <img src="./images/logo1.png" alt="Cal Bears Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo2.png" alt="Dodgers Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo3.png" alt="Angels Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo4.png" alt="MLB Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo5.png" alt="Stanford Cardinal Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo6.png" alt="UCLA Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo7.png" alt="USC Trojans Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
+            <img src="./images/logo8.png" alt="SF Giants Logo" class="h-20 w-auto object-contain max-w-[80px] sm:max-w-none">
     </div>
+    <style>
+        /* Hide scrollbar for mobile horizontal scroll */
+        .hide-scrollbar {
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+    </style>
 </section>
 <section class="bg-black ">
     <section class="w-full topSection py-20 min-h-[70vh] lg:mt-28 mb-36 text-white px-4 lg:px-0 relative overflow-hidden">

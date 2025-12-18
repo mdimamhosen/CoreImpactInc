@@ -191,9 +191,9 @@
             <!--  -->
         </section>
         <section class="relative bg-black min-h-[500px] lg:min-h-[893px] h-screen bg-cover bg-right bg-no-repeat" style="background-image: url('./images/betts1.png');">
-            <div class="topSection mx-auto relative z-10 flex items-center py-12 md:py-20 px-4 lg:px-0 min-h-[500px] lg:min-h-[600px]">
-                <!-- Flex container to align text left & vertical center -->
-                <div class="w-full flex flex-col justify-center lg:justify-center lg:items-start">
+            <div class="topSection mx-auto relative z-10 flex flex-col items-center justify-center py-12 md:py-20 px-4 lg:px-0 min-h-[500px] lg:min-h-[600px]">
+                <!-- Responsive: stack text center on mobile, left on lg+ -->
+                <div class="w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
                     <h1 class="sports-heading" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: 96px; line-height: 110%; letter-spacing: -3%; text-transform: uppercase;">
                         <span class="text-white">Next-Level</span>
                         <br>
@@ -219,17 +219,17 @@
         <!--  -->
         <!--  -->
         <section class="lg:min-h-[737px] bg-black ">
-            <div class="topSection   mx-auto px-4 lg:px-0 flex flex-col lg:flex-row lg:gap-16 items-center justify-between h-full">
-                <div class="w-full h-full lg:w-full">
+            <div class="topSection mx-auto px-4 lg:px-0 flex flex-col lg:flex-row lg:gap-16 items-center justify-between h-full">
+                <div class="w-full h-full lg:w-full mb-8 lg:mb-0">
                     <img src="./images/mokiebats2.png" alt="mookiebats" class="w-full h-full object-cover">
                 </div>
-                <div class="w-full flex flex-col justify-center lg:justify-center lg:items-start mt-8 lg:mt-0">
+                <div class="w-full flex flex-col justify-center items-center lg:justify-center lg:items-start mt-0">
                     <h1 class="sports-heading" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: 96px; line-height: 110%; letter-spacing: -3%; text-transform: uppercase;">
                         <span class="text-white">ENGINEERED FOR</span>
                         <br>
                         <span class="text-[#CCDC48]">GREATNESS</span>
                     </h1>
-                    <p class="  mt-4 text-white" style="font-family: 'Inter Tight'; font-weight: 500; font-style: normal; font-size: 24px; line-height: 100%; letter-spacing: 0%;">
+                    <p class="mt-4 text-white text-center lg:text-left" style="font-family: 'Inter Tight'; font-weight: 500; font-style: normal; font-size: 24px; line-height: 100%; letter-spacing: 0%;">
                         <span class="text-[#CCDC48]">Champions</span>
                         <span>
                             don't leave performance to chance.
@@ -261,14 +261,14 @@
         </section>
         <!--  -->
         <section class="lg:min-h-[893px] bg-black">
-            <div class="relative h-full w-full min-h-[400px]   lg:min-h-[893px]   px-4 lg:px-0" style="background-image: url('./images/m3.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                <div class=" topSection   lg:pt-32 w-full   mx-auto rounded-lg flex flex-col lg:flex-row items-start lg:justify-between h-full py-12 md:py-20">
-                    <h1 class="sports-heading  w-full lg:w-[60%]    " style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: 96px; line-height: 110%; letter-spacing: -3%; text-transform: uppercase;">
+            <div class="relative h-full w-full min-h-[400px] lg:min-h-[893px] px-4 lg:px-0" style="background-image: url('./images/m3.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="topSection lg:pt-32 w-full mx-auto rounded-lg flex flex-col lg:flex-row items-center lg:items-start lg:justify-between h-full py-12 md:py-20">
+                    <h1 class="sports-heading w-full lg:w-[60%] text-center lg:text-left" style="font-family: 'Anton', sans-serif; font-weight: 400; font-style: normal; font-size: 96px; line-height: 110%; letter-spacing: -3%; text-transform: uppercase;">
                         <span class="text-white">Journey to</span>
                         <br>
                         <span class="text-[#CCDC48]">FOUR</span>
                     </h1>
-                    <p style="font-family: 'Inter Tight'; font-weight: 500; font-style: normal; font-size: 24px; line-height: 100%; letter-spacing: 0%;" class="mt-4 text-white text-center lg:text-left w-full lg:w-1/2   lg:min-h-[12.5em] lg:leading-[2.5] flex justify-center items-start">
+                    <p style="font-family: 'Inter Tight'; font-weight: 500; font-style: normal; font-size: 24px; line-height: 100%; letter-spacing: 0%;" class="mt-4 text-white text-center lg:text-left w-full lg:w-1/2 lg:min-h-[12.5em] lg:leading-[2.5] flex flex-col justify-center items-center lg:items-start">
                         Mookie Betts began using Core Impact in Spring Training to better understand his mechanics.
                         <br>
                         When a brief slump hit early in the season,
@@ -284,12 +284,12 @@
         </section>
         <!--  -->
 <section class="bg-black">
-    <div class="topSection px-4 lg:px-0 flex items-center gap-12">
-        <!-- LEFT: TEXT -->
-        <div class="flex items-center justify-between w-full py-20 lg:py-32">
+    <div class="topSection px-4 lg:px-0 flex flex-col items-center gap-8 sm:gap-12">
+        <!-- Responsive: stack vertically on mobile, row on lg+ -->
+        <div class="flex flex-col lg:flex-row items-center justify-between w-full py-10 sm:py-20 lg:py-32 gap-8 lg:gap-0">
             <h1
                 id="impact-heading"
-                class="text-white uppercase leading-[1.1]"
+                class="text-white uppercase leading-[1.1] text-center lg:text-left"
                 style="
                     font-family: 'Anton', sans-serif;
                     font-weight: 400;
@@ -303,21 +303,21 @@
                 IMPACT
             </h1>
             <!-- CENTER: VERTICAL LINE -->
-            <div id="impact-divider" class="w-[4px] bg-white rounded-full mx-12" style="height: 100%; min-height: 0;"></div>
+            <div id="impact-divider" class="hidden lg:block w-[4px] bg-white rounded-full mx-12" style="height: 100%; min-height: 0;"></div>
             <!-- RIGHT: SIGNATURE -->
             <img
                 src="./images/sn.jpg"
                 alt="Signature"
-                class="object-contain"
-                style="height: 200px; width: auto;"
+                class="object-contain mt-8 lg:mt-0"
+                style="height: 120px; width: auto; max-width: 80vw;"
             />
         </div>
         <script>
-            // Dynamically set the divider height to match the heading
+            // Dynamically set the divider height to match the heading (only for lg+)
             document.addEventListener('DOMContentLoaded', function() {
                 var heading = document.getElementById('impact-heading');
                 var divider = document.getElementById('impact-divider');
-                if (heading && divider) {
+                if (heading && divider && window.innerWidth >= 1024) {
                     divider.style.height = heading.offsetHeight + 'px';
                 }
             });
