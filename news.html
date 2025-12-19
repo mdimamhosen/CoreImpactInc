@@ -28,6 +28,39 @@
                 line-height: 34px;
                 letter-spacing: -2%;
             }
+            .cart-product-title {
+                font-family: 'Inter Tight', sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 120%;
+                letter-spacing: -3%;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .cart-product-price {
+                font-family: 'Inter Tight', sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                margin: 0;
+                width: 82px;
+                height: 24px;
+            }
+       
+                .cart-heading {
+                    font-family: 'Anton', sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 48px;
+                    line-height: 120%;
+                    letter-spacing: -3%;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
         </style>
     </head>
     <body class="bg-black" style="font-family: 'Inter', sans-serif;">
@@ -239,92 +272,506 @@
                 </button>
             </div>
         </section>
-<section class="bg-[#1d1d1d]">
-    <footer class="topSection   mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0">
-        <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
-            <div class="space-y-6">
-                <div class="flex items-center">
-                    <svg
-                        width="34"
-                        height="34"
-                        viewBox="0 0 54 45"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z" fill="white"/>
-                        <path d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z" fill="white"/>
-                        <path d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376" fill="white"/>
-                    </svg>
-                    <span class="text-3xl sm:text-4xl font-bold tracking-tight">
-                        coreimpact
-                    </span
+        <section class="bg-[#1d1d1d]">
+            <footer class="topSection   mx-auto bg-[#1d1d1d] text-white py-6 sm:py-8 md:py-12 px-4 lg:px-0">
+                <div class="flex flex-col md:flex-row justify-between gap-10 md:gap-0">
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <svg
+                                width="34"
+                                height="34"
+                                viewBox="0 0 54 45"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M31.5534 40.6384C30.2251 42.5146 28.6571 44.3908 26.1603 44.3908C23.6636 44.3908 22.2354 42.3902 21.027 40.6384L12.1484 27.8056L20.6774 23.224L26.2402 31.1641L32.0228 22.9648L41.0611 27.1733L31.5534 40.6488V40.6384Z" fill="white"/>
+                                <path d="M6.27148 0.0119693C3.74474 0.177821 1.50763 1.66012 0.488948 3.87839C-0.749453 6.55275 0.548871 9.08199 2.32658 11.9637L9.67708 22.6093L18.7254 18.1727L12.823 9.79722H24.5379C24.5579 6.57348 24.5179 3.23571 24.5379 0.0119693C18.8053 -0.0294936 12.0041 0.0534323 6.27148 0.0119693Z" fill="white"/>
+                                <path d="M47.7197 0.0136719C50.2464 0.179524 52.4735 1.66182 53.5022 3.88009C54.7406 6.55445 53.4423 9.08369 51.6646 11.9654L44.3141 22.611L35.2657 18.1744L41.1581 9.79893H29.4433C29.4233 6.57518 29.4632 3.40327 29.4433 0.179524C35.1759 0.138061 41.9771 0.0551348 47.7097 0.0240376" fill="white"/>
+                            </svg>
+                            <span class="text-3xl sm:text-4xl font-bold tracking-tight">
+                                coreimpact
+                            </span
               >
+                        </div>
+                        <p class="text-base font-normal leading-[22px] tracking-normal text-white max-w-xs sm:max-w-sm" style="font-family: 'Inter Tight', sans-serif;">
+                            Real-Time Performance Tracking to Help Athletes Perform at Their Best.
+                        </p>
+                        <div class="flex items-center space-x-3 sm:space-x-4">
+                            <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
+                                <img src="./images/facebook.png" alt="Facebook" class="w-4 h-4 object-contain filter invert">
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
+                                <img src="./images/instagram.png" alt="Instagram" class="w-4 h-4 object-contain filter invert">
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
+                                <img src="./images/twitter.png" alt="Twitter" class="w-4 h-4 object-contain filter invert">
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
+                                <img src="./images/linkedin.png" alt="LinkedIn" class="w-4 h-4 object-contain filter invert">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <div class="flex border-b border-gray-500 mt-2 pb-2">
+                            <input type="text" placeholder="Enter your email" class="flex-1 bg-transparent outline-none text-sm text-white placeholder-[#FFFFFF]">
+                            <button class="text-sm text-white hover:bg-[#CCDC48] hover:text-black px-2 py-1 rounded transition duration-200">
+                                Subscribe
+                            </button>
+                        </div>
+                        <p class="mt-3 text-sm font-medium leading-[22px] tracking-normal text-white max-w-xs sm:max-w-sm" style="font-family: 'Inter Tight', sans-serif;">
+                            Subscribe our newsletter so that you can get offer and discount.
+                        </p>
+                    </div>
                 </div>
-                <p class="text-base font-normal leading-[22px] tracking-normal text-white max-w-xs sm:max-w-sm" style="font-family: 'Inter Tight', sans-serif;">
-                    Real-Time Performance Tracking to Help Athletes Perform at Their Best.
-                </p>
-                <div class="flex items-center space-x-3 sm:space-x-4">
-                    <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
-                        <img src="./images/facebook.png" alt="Facebook" class="w-4 h-4 object-contain filter invert">
-                    </a>
-                    <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
-                        <img src="./images/instagram.png" alt="Instagram" class="w-4 h-4 object-contain filter invert">
-                    </a>
-                    <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
-                        <img src="./images/twitter.png" alt="Twitter" class="w-4 h-4 object-contain filter invert">
-                    </a>
-                    <a href="#" class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-white hover:bg-[#CCDC48] hover:text-black transition duration-200 cursor-pointer">
-                        <img src="./images/linkedin.png" alt="LinkedIn" class="w-4 h-4 object-contain filter invert">
-                    </a>
+                <div class="py-10 sm:py-12 md:py-16 overflow-hidden w-full">
+                    <img src="./images/COREIMPACT.png" alt="" class="w-full">
                 </div>
-            </div>
-            <div class="w-full md:w-auto">
-                <div class="flex border-b border-gray-500 mt-2 pb-2">
-                    <input type="text" placeholder="Enter your email" class="flex-1 bg-transparent outline-none text-sm text-white placeholder-[#FFFFFF]">
-                    <button class="text-sm text-white hover:bg-[#CCDC48] hover:text-black px-2 py-1 rounded transition duration-200">
-                        Subscribe
+                <hr class="border-gray-700 mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0">
+                    <p class="text-white">
+                        Copyright - 2025 | All rights reserved by Coreimpact Inc.
+                    </p>
+                    <div class="relative">
+                        <select class="appearance-none bg-transparent   rounded px-3 py-1 pr-8 font-semibold text-white text-xs cursor-pointer hover:border-[#CCDC48] focus:outline-none focus:border-[#CCDC48] transition duration-200" title="Select currency">
+                            <option value="USD" class="bg-[#1d1d1d] text-white">USD $</option>
+                            <option value="EUR" class="bg-[#1d1d1d] text-white">EUR €</option>
+                            <option value="GBP" class="bg-[#1d1d1d] text-white">GBP £</option>
+                            <option value="CAD" class="bg-[#1d1d1d] text-white">CAD $</option>
+                            <option value="AUD" class="bg-[#1d1d1d] text-white">AUD $</option>
+                        </select>
+                        <svg
+                            class="w-3 h-3 absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        
+
+        <div id="cartWrapper">
+ 
+            <!-- CART DRAWER -->
+            <div id="cartDrawer" class="fixed top-0 right-0 h-full w-[800px] max-w-full bg-black text-white z-[100]
+           transform translate-x-full transition-transform duration-300 ease-in-out
+           flex flex-col w-full max-w-full sm:w-[400px] md:w-[600px] lg:w-[800px]">
+                <!-- HEADER -->
+                <div class="flex items-center justify-between px-4 py-4 border-b border-white/10">
+                    <h2 class="cart-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl">Your Cart</h2>
+                    <button id="closeCartDrawer" class="text-xl">&times;</button>
+                </div>
+                <!-- CONTENT -->
+                <div class="flex-1 overflow-y-auto px-2 py-4 space-y-6">
+                    <!-- CART ITEM -->
+                    <div class="flex gap-2 sm:gap-4 flex-col xs:flex-row sm:flex-row">
+                        <div style="width:100px;height:100px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;" class="sm:w-[140px] sm:h-[140px]">
+                            <img src="/images/man.png" style="width:100px;height:100px;border-radius:10px;object-fit:cover;background:#fff;" alt="Product" class="rounded-xl sm:w-[140px] sm:h-[140px]">
+                        </div>
+                        <div class="flex-1">
+                            <div  class="flex flex-col sm:flex-row justify-between items-start sm:items-center ">
+                                <p class="cart-product-title text-base sm:text-lg">CoreImpact Eco-Suit Pre-Order<br class="hidden sm:block">For Fall 2025</p>
+                                <p class="cart-product-price text-base sm:text-lg">$899.00</p>
+                            </div>
+                           
+                            <div class="flex items-center justify-between mt-3 gap-2">
+                                <button class="min-w-[32px] min-h-[32px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="12" fill="#1F1F1F"/>
+                                        <path d="M9 17C8.45 17 7.97917 16.8042 7.5875 16.4125C7.19583 16.0208 7 15.55 7 15V8H6V6H11V5H13V6H18V8H17V15C17 15.55 16.8042 16.0208 16.4125 16.4125C16.0208 16.8042 15.55 17 15 17H9ZM15 8H9V15H15V8ZM11 13H13V10H11V13Z" fill="white"/>
+                                    </svg>
+                                </button>
+                               <div class="flex items-center gap-2 border border-white/20 rounded px-2 py-1">
+                                 <button class="border-white/20 px-2 text-base sm:text-lg">−</button>
+                                <span class="text-sm sm:text-base">1</span>
+                                <button class="border-white/20 px-2 text-base sm:text-lg">+</button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-white/10 my-4"></div>
+                    <div class="flex gap-2 sm:gap-4 flex-col xs:flex-row sm:flex-row">
+                        <div style="width:100px;height:100px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;" class="sm:w-[140px] sm:h-[140px]">
+                            <img src="/images/man.png" style="width:100px;height:100px;border-radius:10px;object-fit:cover;" alt="Product" class="rounded-xl sm:w-[140px] sm:h-[140px]">
+                        </div>
+                        <div class="flex-1">
+                            <div  class="flex flex-col sm:flex-row justify-between items-start sm:items-center ">
+                                <p class="cart-product-title text-base sm:text-lg">CoreImpact Eco-Suit Pre-Order<br class="hidden sm:block">For Fall 2025</p>
+                                <p class="cart-product-price text-base sm:text-lg">$899.00</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-3 gap-2">
+                                <button class="min-w-[32px] min-h-[32px]">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="12" fill="#1F1F1F"/>
+                                        <path d="M9 17C8.45 17 7.97917 16.8042 7.5875 16.4125C7.19583 16.0208 7 15.55 7 15V8H6V6H11V5H13V6H18V8H17V15C17 15.55 16.8042 16.0208 16.4125 16.4125C16.0208 16.8042 15.55 17 15 17H9ZM15 8H9V15H15V8ZM11 13H13V10H11V13Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <div class="flex items-center gap-2 border border-white/20 rounded px-2 py-1">
+                                    <button class="border-white/20 px-2 text-base sm:text-lg">−</button>
+                                    <span class="text-sm sm:text-base">1</span>
+                                    <button class="border-white/20 px-2 text-base sm:text-lg">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SUBTOTAL -->
+                    <div class="flex justify-between text-sm font-semibold border-t border-white/10 pt-4">
+                        <span style="display:inline-block;width:90px;height:24px;" class="sm:w-[122px] sm:h-[29px]">Subtotal</span>
+                        <span style="display:inline-block;width:70px;height:24px;" class="sm:w-[98px] sm:h-[29px]">$899.00</span>
+                    </div>
+                    <!-- YOU MAY ALSO LIKE -->
+              
+                        <h3 class="text-sm uppercase mb-3 w-full " style=" font-family:'Inter Tight',sans-serif;font-weight:700;font-size:36px;line-height:100%;letter-spacing:0%;text-transform:uppercase;">You may also like</h3>
+  
+                   
+                                              <div class="topSection  relative">
+            <!-- Navigation Buttons for Products -->
+            <button id="products-slider-prev" class="block absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-2 sm:p-3 transition-all duration-300 shadow-lg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button id="products-slider-next" class="block lg:block absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-[#CCDC48] hover:bg-[#b8c942] text-black rounded-full p-3 transition-all duration-300 shadow-lg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            
+            <div id="products-slider" class="overflow-hidden">
+                <div id="products-track" class="flex transition-transform duration-500 ease-in-out gap-4 sm:gap-6">
+            <!-- Original Products -->
+           <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/man1.png" alt="CoreImpact Performance Black" class="w-full   h-full object-contain">
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-data-color-lime text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            NEW
+                        </span
+                >
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            PRE-ORDER NOW
+                        </span
+                >
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        VIEW PRODUCT
                     </button>
                 </div>
-                <p class="mt-3 text-sm font-medium leading-[22px] tracking-normal text-white max-w-xs sm:max-w-sm" style="font-family: 'Inter Tight', sans-serif;">
-                    Subscribe our newsletter so that you can get offer and discount.
-                </p>
-            </div>
-        </div>
-        <div class="py-10 sm:py-12 md:py-16 overflow-hidden w-full">
-            <img src="./images/COREIMPACT.png" alt="" class="w-full">
-        </div>
-        <hr class="border-gray-700 mb-6">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0">
-            <p class="text-white">
-                Copyright - 2025 | All rights reserved by Coreimpact Inc.
-            </p>
-            <div class="relative">
-                <select class="appearance-none bg-transparent   rounded px-3 py-1 pr-8 font-semibold text-white text-xs cursor-pointer hover:border-[#CCDC48] focus:outline-none focus:border-[#CCDC48] transition duration-200" title="Select currency">
-                    <option value="USD" class="bg-[#1d1d1d] text-white">USD $</option>
-                    <option value="EUR" class="bg-[#1d1d1d] text-white">EUR €</option>
-                    <option value="GBP" class="bg-[#1d1d1d] text-white">GBP £</option>
-                    <option value="CAD" class="bg-[#1d1d1d] text-white">CAD $</option>
-                    <option value="AUD" class="bg-[#1d1d1d] text-white">AUD $</option>
-                </select>
-                <svg
-                    class="w-3 h-3 absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - BLACK
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span
                 >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                    ></path>
-                </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people2.png" alt="CoreImpact Performance Black" class="w-full   h-full object-contain">
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-data-color-lime text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            NEW
+                        </span
+                >
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            PRE-ORDER NOW
+                        </span
+                >
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        VIEW PRODUCT
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - BLACK
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span
+                >
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:w-[359px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people3.png" alt="CoreImpact Performance Red" class="w-full h-auto max-h-full object-contain">
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-[#CCDC48] w-fit text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            UPCOMING
+                        </span
+                >
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            AVAILABLE WINTER 25
+                        </span
+                >
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        NOTIFY ME
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - RED
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span
+                >
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:w-[359px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people4.png" alt="CoreImpact Performance Blue" class="w-full h-auto max-h-full object-contain">
+                    <div class="absolute w-fit top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-[#CCDC48] w-fit text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            UPCOMING
+                        </span
+                >
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            AVAILABLE WINTER 25
+                        </span
+                >
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        NOTIFY ME
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - BLUE
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span
+                >
+                    </div>
+                </div>
+            </div>
+            <!-- Cloned Products for Seamless Loop -->
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:w-[359px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people1.png" alt="CoreImpact Performance White" class="w-full h-auto max-h-full object-contain">
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-data-color-lime text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            NEW
+                        </span>
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            PRE-ORDER NOW
+                        </span>
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        ADD TO CART
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - WHITE
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#ccdc48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people2.png" alt="CoreImpact Performance Black" class="w-full   h-full object-contain">
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-data-color-lime text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            NEW
+                        </span>
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase w-fit">
+                            PRE-ORDER NOW
+                        </span>
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        VIEW PRODUCT
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - BLACK
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:w-[359px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people3.png" alt="CoreImpact Performance Red" class="w-full h-auto max-h-full object-contain">
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-[#CCDC48] w-fit text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            UPCOMING
+                        </span>
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            AVAILABLE WINTER 25
+                        </span>
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        NOTIFY ME
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - RED
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card flex-shrink-0 w-72 sm:w-80 lg:w-[359px] lg:min-w-[359px]">
+                <div class=" relative bg-[#1e1e1e] rounded-[10px] overflow-visible h-[300px] sm:w-[359px] sm:h-[470px] flex items-center justify-center">
+                    <img src="./images/people4.png" alt="CoreImpact Performance Blue" class="w-full h-auto max-h-full object-contain">
+                    <div class="absolute w-fit top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-[#CCDC48] w-fit text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            UPCOMING
+                        </span>
+                        <span class="bg-[#CCDC48] text-black font-semibold text-xs py-1 px-3 rounded-full uppercase">
+                            AVAILABLE WINTER 25
+                        </span>
+                    </div>
+                    <button class="product-button absolute bottom-4 left-4 right-4 bg-data-color-lime text-black py-3 text-sm font-bold uppercase hover:opacity-80 transition duration-300 rounded-lg">
+                        NOTIFY ME
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <p class="text-xs text-white">Clothing</p>
+                    <p class="text-base sm:text-lg font-semibold uppercase mt-1">
+                        COREIMPACT PERFORMANCE - BLUE
+                    </p>
+                    <div class="flex items-center text-sm mt-1">
+                        <span class="mr-2">$196.00</span>
+                        <span class="bg-[#CCDC48] text-black rounded-full font-semibold text-xs sm:text-sm p-1">
+                            SOLD OUT
+                        </span>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-    </footer>
-</section>
-        <script src="./script.js"></script>
+        </div>
+                </div>
+                <!-- FOOTER -->
+                <div class="p-4 border-t flex flex-col justify-center items-center gap-3 border-white/10">
+                    <button class="w-full mx-auto bg-lime-400 text-black font-bold py-3 text-sm rounded" style="max-width:100%;width:100%;height:48px;border-radius:5px;padding:12px 16px;gap:10px;">
+                        <span style="font-family: 'Inter Tight', sans-serif; font-weight: 700; font-size: 14px; line-height: 100%; letter-spacing: 0%; text-align: center; text-transform: uppercase;">Checkout Now</span>
+                    </button>
+                    <p class="text-[10px] text-gray-400 text-center mt-2">
+                        <span style="font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: 12px; line-height: 18px; letter-spacing: 0%; text-align: center;">Once you click the checkout button, your order will be confirmed.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
         <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const cartDrawer = document.getElementById('cartDrawer');
+                            const closeCartDrawer = document.getElementById('closeCartDrawer');
+                            const navbarCartBtn = document.querySelectorAll('header .hidden.lg\\:flex button')[2];
+                            if (navbarCartBtn && cartDrawer && closeCartDrawer) {
+                                navbarCartBtn.addEventListener('click', function (e) {
+                                    e.preventDefault();
+                                    cartDrawer.style.display = 'flex';
+                                    setTimeout(() => {
+                                        cartDrawer.style.transform = 'translateX(0)';
+                                    }, 10);
+                                });
+                                closeCartDrawer.addEventListener('click', function () {
+                                    cartDrawer.style.transform = 'translateX(100%)';
+                                    setTimeout(() => {
+                                        cartDrawer.style.display = 'none';
+                                    }, 300);
+                                });
+                                // Optional: Close drawer when clicking outside
+                                document.addEventListener('mousedown', function (event) {
+                                    if (cartDrawer.style.display === 'flex' && !cartDrawer.contains(event.target) && event.target !== navbarCartBtn) {
+                                        cartDrawer.style.transform = 'translateX(100%)';
+                                        setTimeout(() => {
+                                            cartDrawer.style.display = 'none';
+                                        }, 300);
+                                    }
+                                });
+                            }
+
+                            // --- Product Slider Logic ---
+                            const track = document.getElementById('products-track');
+                            const prevBtn = document.getElementById('products-slider-prev');
+                            const nextBtn = document.getElementById('products-slider-next');
+                            const cards = track ? track.querySelectorAll('.product-card') : [];
+                            let currentIndex = 0;
+                            const cardWidth = cards.length > 0 ? cards[0].offsetWidth + 24 : 0; // 24px gap-6
+                            const maxIndex = cards.length - Math.floor(document.getElementById('products-slider').offsetWidth / cardWidth);
+
+                            function updateSlider() {
+                                if (!track) return;
+                                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                                // Optionally disable/enable buttons
+                                if (prevBtn) prevBtn.disabled = currentIndex === 0;
+                                if (nextBtn) nextBtn.disabled = currentIndex >= maxIndex;
+                            }
+
+                            if (prevBtn) {
+                                prevBtn.addEventListener('click', function () {
+                                    if (currentIndex > 0) {
+                                        currentIndex--;
+                                        updateSlider();
+                                    }
+                                });
+                            }
+                            if (nextBtn) {
+                                nextBtn.addEventListener('click', function () {
+                                    if (currentIndex < maxIndex) {
+                                        currentIndex++;
+                                        updateSlider();
+                                    }
+                                });
+                            }
+
+                            // Responsive: recalculate on resize
+                            window.addEventListener('resize', function () {
+                                updateSlider();
+                            });
+
+                            // Initial state
+                            updateSlider();
+                        });
             const searchToggle = document.getElementById('searchToggle');
             const searchContainer = document.getElementById('searchContainer');
             const searchInputNavbar = document.getElementById('searchInputNavbar');
